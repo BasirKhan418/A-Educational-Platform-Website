@@ -1,29 +1,51 @@
-# Create T3 App
+# Educare Plus Website
+This is the official website of Educare Plus, a offline and online learning platform. This website is built using Nextjs and Tailwind CSS.
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+## Task List
+- [x] Initial Setup
+- [x] Create Github repository
+- [ ] Deploy on vercel
+- [ ] Create project structure
+- [ ] Create the landing page
+- [ ] Enquiry Form
+- [ ] Integrate Sanity
+  - [ ] Create schema
+  - [ ] Manage all content through Sanity
+- [ ] Create other pages
+  - [ ] About Us
+  - [ ] Courses
+  - [ ] Contact Us
+  - [ ] Batches
+  - [ ] Achievements
+  - [ ] Blog
+- [ ] Add minor animations
+- [ ] Update meta tags
+- [ ] Dynamic meta tags for blogs
+- [ ] Add SEO
+  - [ ] Sitemap
+  - [ ] Robots.txt
+  - [ ] Plausible Analytics
+  - [ ] Google Search Console
+- [ ] MAKE SITE LIVE 🎉
 
-## What's next? How do I make an app with this?
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Getting Started
+To get started with this project, you need to have Nodejs installed on your machine. You can download Nodejs from [here](https://nodejs.org/en/).
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+After installing Nodejs, you can clone this repository by running the following command in your terminal:
+```bash
+git clone
+```
 
-## Learn More
+After cloning the repository, navigate to the project directory and run the following command to install the dependencies:
+```bash
+npm install
+```
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+After installing the dependencies, you can run the following command to start the development server:
+```bash
+npm run dev
+```
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
-
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+This will start the development server on `http://localhost:3000`.
