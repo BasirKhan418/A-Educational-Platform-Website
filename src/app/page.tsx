@@ -7,6 +7,6 @@ import Link from "next/link";
 
 export default function LandingPage() {
   return (
-    <div className="flex min-h-screen flex-col">Educare Plus Landing Page</div>
+    <div className="flex min-h-screen flex-col"></div>
   );
 }
