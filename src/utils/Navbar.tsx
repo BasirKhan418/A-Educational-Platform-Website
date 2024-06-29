@@ -2,18 +2,8 @@
 import React, { use, useEffect } from "react";
 import { useState } from "react";
 import Link from "next/link";
-import { FaUserAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
-import {
-  AiFillCloseCircle,
-} from "react-icons/ai";
-import {
-  MdManageAccounts,
-  MdShoppingCart,
-} from "react-icons/md";
-import {  BiLogOut } from "react-icons/bi";
-import { IoTicket } from "react-icons/io5";
-import { BsCalendar2EventFill } from "react-icons/bs";
+
 const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
