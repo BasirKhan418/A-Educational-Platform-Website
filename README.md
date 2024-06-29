@@ -34,18 +34,23 @@ This is the official website of Educare Plus, a offline and online learning plat
 To get started with this project, you need to have Nodejs installed on your machine. You can download Nodejs from [here](https://nodejs.org/en/).
 
 After installing Nodejs, you can clone this repository by running the following command in your terminal:
+Before that if you don't have pnpm installed, first install it by running the following command in your terminal:
+```bash
+npm install -g pnpm
+```
+
 ```bash
 git clone
 ```
 
 After cloning the repository, navigate to the project directory and run the following command to install the dependencies:
 ```bash
-npm install
+pnpm install
 ```
 
 After installing the dependencies, you can run the following command to start the development server:
 ```bash
-npm run dev
+pnpm dev
 ```
 
 This will start the development server on `http://localhost:3000`.
