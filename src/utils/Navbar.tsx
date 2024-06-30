@@ -58,10 +58,9 @@ const Navbar = () => {
               transition={{ type: "spring", stiffness: 100 }}
             >
               <Link href={"/"}>
-                <h1 className="text-4xl sm:text-2xl lg:text-4xl text-primary font-bold ">
-                  {" "}
-                  <img src="https://s3-alpha-sig.figma.com/img/3a45/7a59/a344c7df92387190a0c3dac850d8e0c2?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D~xgCoLmZCbrSBV~D2fK4xSuSjFLztGUdOrg~8PXzN0q9adE8iE5XN3KYA55ke9EX0V22USdJHuHwbzrQmYE5iDdfXuNZhnrkX-cMnEkpqVcDIXjP3UgyxYo-vgn6pOq3x8DJ93XIMvwOXJMqoaFWqviZyjpzy4n50DC2ijoPwDFx2Uj754-SvQ-u0LcrqXpBniJahW9cqRlaednohsujm9vrYQq2Cex7bC72gJhMigdFMU5bXOuMLaLg0C3Y5B~2-Dbkv~DzqATYV~8P-b7Oj0-iscFH3fJpP9iBqbu20FXv5xND3NrLxW1hzpIUdIZKeMLFsIHz-FVZqMqUnm0cA__" alt="" className="lg:w-16 lg:h-16 md:w-16 md:h-16 w-14 h-14 lg:h-16 lg:w-16  " />
-                </h1>
+                
+                  <img src="https://s3-alpha-sig.figma.com/img/3a45/7a59/a344c7df92387190a0c3dac850d8e0c2?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D~xgCoLmZCbrSBV~D2fK4xSuSjFLztGUdOrg~8PXzN0q9adE8iE5XN3KYA55ke9EX0V22USdJHuHwbzrQmYE5iDdfXuNZhnrkX-cMnEkpqVcDIXjP3UgyxYo-vgn6pOq3x8DJ93XIMvwOXJMqoaFWqviZyjpzy4n50DC2ijoPwDFx2Uj754-SvQ-u0LcrqXpBniJahW9cqRlaednohsujm9vrYQq2Cex7bC72gJhMigdFMU5bXOuMLaLg0C3Y5B~2-Dbkv~DzqATYV~8P-b7Oj0-iscFH3fJpP9iBqbu20FXv5xND3NrLxW1hzpIUdIZKeMLFsIHz-FVZqMqUnm0cA__" alt="" className="lg:w-16 lg:h-16 md:w-16 md:h-16 w-14 h-14 lg:h-16 lg:w-16 object-fit lg:mx-16 md:mx-4 mx-2" />
+              
               </Link>
 
               <div className="flex lg:hidden ">
@@ -130,7 +129,7 @@ const Navbar = () => {
                 isOpen == true
                   ? "translate-x-0 opacity-100 border2 border2 w-full h-[100vh] bg-opacity-80 backdrop-filter backdrop-blur-xl"
                   : "opacity-0 translate-x-full"
-              } absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out dark:bg-black bg-white lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center`}
+              } absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out dark:bg-black bg-white lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center `}
             >
               <motion.div
                 className="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8"
@@ -140,8 +139,8 @@ const Navbar = () => {
               >
                 <Link href={"/"}>
                   <motion.li
-                  className=" list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 text-primary  roboto-medium 
-                    text-lg lg:text-base md:text-base sm:text-lg hover:shadow hover:shadow-bgcust hover:spread-bg"
+                  className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 text-primary
+                    text-lg lg:text-base md:text-base sm:text-lg  ${data2?"inter-bold text-black":"roboto-medium text-gray-500 font-semibold"} text-gray-800`}
                     whileTap={{ scale: 0.9, rotate: 1 }}
                     transition={{ type: "spring", stiffness: 400 }}
                     onMouseEnter={() => {
@@ -152,7 +151,9 @@ const Navbar = () => {
                     }}
                     onClick={() =>setIsOpen(false)}
                   >
+                    
                     Home
+                  
                     {data2 && (
                       <motion.div
                         className="h-1 bg-bgcust rounded-full "
@@ -165,8 +166,8 @@ const Navbar = () => {
                   </Link>
                   <Link href="/#about">
                   <motion.li
-                    className=" list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 text-black roboto-medium  dark:text-primary
-                    text-lg lg:text-base md:text-base sm:text-lg hover:shadow hover:shadow-bgcust hover:spread-bg"
+                  className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 text-primary
+                    text-lg lg:text-base md:text-base sm:text-lg  ${data6?"roboto-bold text-black":"roboto-medium "} text-gray-800`}
                     whileTap={{ scale: 0.9, rotate: 1 }}
                     transition={{ type: "spring", stiffness: 400 }}
                     onMouseEnter={() => {
@@ -191,8 +192,8 @@ const Navbar = () => {
                   </Link>
                 <Link href={"/#acievement"}>
                   <motion.li
-                     className=" list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 text-primary  roboto-medium  
-                    text-lg lg:text-base md:text-base sm:text-lg hover:shadow hover:shadow-bgcust hover:spread-bg"
+                      className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 text-primary
+                        text-lg lg:text-base md:text-base sm:text-lg  ${data1?"roboto-bold text-black":"roboto-medium "} text-gray-800`}
                     whileTap={{ scale: 0.9, rotate: 1 }}
                     transition={{ type: "spring", stiffness: 400 }}
                     onMouseEnter={() => {
@@ -218,8 +219,8 @@ const Navbar = () => {
 
                 <Link href={"/#event"}>
                   <motion.li
-                    className=" list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 text-primary  roboto-medium  
-                    text-lg lg:text-base md:text-base sm:text-lg hover:shadow hover:shadow-bgcust hover:spread-bg"
+                  className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 text-primary
+                    text-lg lg:text-base md:text-base sm:text-lg  ${data3?"roboto-bold text-black":"roboto-medium "} text-gray-800`}
                     whileTap={{ scale: 0.9, rotate: 1 }}
                     transition={{ type: "spring", stiffness: 400 }}
                     onMouseEnter={() => {
@@ -243,8 +244,8 @@ const Navbar = () => {
                 </Link>
                <Link  href={"/#course"}>
                   <motion.li
-                     className=" list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 text-primary  roboto-medium  
-                    text-lg lg:text-base md:text-base sm:text-lg hover:shadow hover:shadow-bgcust hover:spread-bg"
+                               className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 text-primary
+                                text-lg lg:text-base md:text-base sm:text-lg  ${data4?"roboto-bold text-black":"roboto-medium "} text-gray-800`}
                     whileTap={{ scale: 0.9, rotate: 1 }}
                     transition={{ type: "spring", stiffness: 400 }}
                     onMouseEnter={() => {
