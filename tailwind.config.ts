@@ -17,6 +17,7 @@ module.exports = {
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         bgcust:"#02B3E4",
+        bgresult:"rgba(30, 30, 30, 0.9)",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
