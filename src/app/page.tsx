@@ -6,11 +6,15 @@
 import Link from "next/link";
 import Hero from "@/utils/Hero";
 import About from "@/components/about";
+import Result from "@/utils/Result";
+import Events from "@/utils/Events";
 export default function LandingPage() {
   return (
     <div className="space-y-12">
       <Hero />
       <About />
+      <Result/>  
+      <Events />
     </div>
   );
 }
