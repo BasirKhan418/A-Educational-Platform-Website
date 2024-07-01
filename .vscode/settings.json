@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "Config",
-        "Remove Not needed code"
+        "Remove Not needed code",
+        "New UI section "
     ]
 }

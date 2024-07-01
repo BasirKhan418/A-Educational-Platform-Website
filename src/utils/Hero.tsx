@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div>
+    <div id="home">
       <div className="bg-white dark:bg-gray-900">
         <section className="bg-[#FCF8F1] dark:bg-black bg-opacity-30 py-10 sm:py-16 lg:py-24">
           <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -11,7 +11,7 @@ const Hero = () => {
                 <h1 className="mt-12 text-5xl font-bold text-black dark:text-white lg:mt-12 sm:text-6xl xl:text-[84px] inter-bold text-center md:mt-8 lg:text-left ">
                   Best Offline Platform For Education
                 </h1>
-                <p className="mt-2 text-sm text-black dark:text-gray-300 lg:mt-4 sm:text-sm inter-medium lg:w-[425px] lg:h-[32px] lg:text-left md:text-left text-center">
+                <p className="mt-2 text-sm text-secondary dark:text-gray-300 lg:mt-4 sm:text-sm inter-medium lg:w-[425px] lg:h-[32px] lg:text-left md:text-left text-center">
                   Using highly personalised activities, videos and animations you can energise your students.
                 </p>
                 <div className="mt-8 flex space-x-4 flex-wrap justify-center items-center lg:justify-start lg:items-start md:justify-start md:items-start">
@@ -85,7 +85,7 @@ const Hero = () => {
                   
                 </div>
                 <div className='absolute lg:-right-3  lg:top-48 md:top-48 sm:top-48 md:right-28 sm:right-0 right-0 top-60'>
-                <img src="/herosvg.svg" alt="" className="object-cover h-80" />
+                <img src="/herosvg.svg" alt="" className="object-cover h-40 md:h-80" />
                 </div>
               </div>
             </div>

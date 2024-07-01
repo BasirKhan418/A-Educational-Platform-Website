@@ -5,10 +5,12 @@
  */
 import Link from "next/link";
 import Hero from "@/utils/Hero";
+import About from "@/components/about";
 export default function LandingPage() {
   return (
-    <div>
-<Hero />
+    <div className="space-y-12">
+      <Hero />
+      <About />
     </div>
   );
 }
