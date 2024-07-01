@@ -8,7 +8,7 @@ import Hero from "@/utils/Hero";
 import About from "@/components/about";
 export default function LandingPage() {
   return (
-    <div>
+    <div className="space-y-12">
       <Hero />
       <About />
     </div>

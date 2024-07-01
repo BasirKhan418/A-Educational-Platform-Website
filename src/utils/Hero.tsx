@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div>
+    <div id="home">
       <div className="bg-white dark:bg-gray-900">
         <section className="bg-[#FCF8F1] dark:bg-black bg-opacity-30 py-10 sm:py-16 lg:py-24">
           <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -85,7 +85,7 @@ const Hero = () => {
                   
                 </div>
                 <div className='absolute lg:-right-3  lg:top-48 md:top-48 sm:top-48 md:right-28 sm:right-0 right-0 top-60'>
-                <img src="/herosvg.svg" alt="" className="object-cover h-80" />
+                <img src="/herosvg.svg" alt="" className="object-cover h-40 md:h-80" />
                 </div>
               </div>
             </div>
