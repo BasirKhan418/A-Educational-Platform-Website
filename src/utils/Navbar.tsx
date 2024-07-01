@@ -124,7 +124,7 @@ const Navbar = () => {
               </div>
               
             </motion.div>
-<div
+              <div
               className={` ${
                 isOpen == true
                   ? "translate-x-0 opacity-100 border2 border2 w-full h-[100vh] bg-opacity-80 backdrop-filter backdrop-blur-xl"
@@ -267,17 +267,8 @@ const Navbar = () => {
                     )}
                   </motion.li>
                   </Link>
-              
-               
               </motion.div>
 
-                
-
-                 
-                
-               
-              
-             
             </div>
             
           </div>

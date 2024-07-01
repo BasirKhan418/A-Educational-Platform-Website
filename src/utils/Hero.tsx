@@ -11,7 +11,7 @@ const Hero = () => {
                 <h1 className="mt-12 text-5xl font-bold text-black dark:text-white lg:mt-12 sm:text-6xl xl:text-[84px] inter-bold text-center md:mt-8 lg:text-left ">
                   Best Offline Platform For Education
                 </h1>
-                <p className="mt-2 text-sm text-black dark:text-gray-300 lg:mt-4 sm:text-sm inter-medium lg:w-[425px] lg:h-[32px] lg:text-left md:text-left text-center">
+                <p className="mt-2 text-sm text-secondary dark:text-gray-300 lg:mt-4 sm:text-sm inter-medium lg:w-[425px] lg:h-[32px] lg:text-left md:text-left text-center">
                   Using highly personalised activities, videos and animations you can energise your students.
                 </p>
                 <div className="mt-8 flex space-x-4 flex-wrap justify-center items-center lg:justify-start lg:items-start md:justify-start md:items-start">
