@@ -8,6 +8,8 @@ import Hero from "@/utils/Hero";
 import About from "@/components/about";
 import Result from "@/utils/Result";
 import Events from "@/utils/Events";
+import Course from "@/utils/Course";
+import Blog from "@/utils/Blog";
 export default function LandingPage() {
   return (
     <div className="space-y-12">
@@ -15,6 +17,8 @@ export default function LandingPage() {
       <About />
       <Result/>  
       <Events />
+      <Course/>
+      <Blog/>
     </div>
   );
 }
