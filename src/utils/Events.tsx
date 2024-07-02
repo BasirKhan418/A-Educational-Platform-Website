@@ -24,10 +24,11 @@ const Events = () => {
       <div className='flex justify-center items-center flex-col'>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6  lg:w-[1164px] lg:mr-14">
         {Array(8).fill().map((_, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-lg text-center h-[426px] w-[360px] roboto-medium my-4 mx-2" style={{borderLeft:"1px solid #02B3E4",borderRight:"1px solid #02B3E4"}}>
+          <div key={index} className="bg-white rounded-lg  text-center h-[426px] w-[360px] roboto-medium my-4 mx-2" style={{borderLeft:"1px solid #02B3E4",borderRight:"1px solid #02B3E4"}}>
             <img
               src="https://s3-alpha-sig.figma.com/img/b48e/2933/8f6c330b4f0881bf773b3f24635ee909?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pzd7DsH~ipLA1vR35hIvjAgrHs9LbvnEFkkW0AjCt~2tdjPW2Tn3pNO8mJx5u-DN15h~u68YqjSpJG8f8O9Hp34Nds~i0DM~Epppz62PLBmu3OqfUhXBx1gECm78kUPC48VKTzSP~9Hia9yiTSVnapEnDc8UJTQiwhfGZqSQ4zDBUzeTsl6FoRp1b-M-pgSNI5s-b-M~1~BErSvs3gLlgfctTcIIbikrnI7lf63o3uqUZzz4br8qkDcAdLeUfwGbPKF1dSIpkcQzBnAZXCon8Pi0kikFU5OpA-0uq~KQK9NyBngkjo9nXJZGtnRdyTgKmd9a5LxCtnpXoRG8g1rjqQ__"
               alt="Consequat"
+              style={{borderLeft:"1px solid #02B3E4",borderRight:"1px solid #02B3E4"}}
               className=" object-cover mb-4 rounded-lg h-[227px] w-[360px]"
             />
             <h3 className="text-xl font-bold  text-left px-4">Consequat</h3>
@@ -40,7 +41,7 @@ const Events = () => {
       </div>
       <div className="flex lg:justify-between md:justify-between xl:justify-between justify-center mt-8 items-center">
         <a href="#" className="text-bgcust inter-bold mx-2 text-2xl hidden lg:block md:block md:text-xl">View All Courses</a>
-        <div className='h-1 bg-bgcust w-[54vw] hidden lg:block md:block md:text-xl mx-3'></div>
+        <div className='h-[2px] bg-gray-600 w-[54vw] hidden lg:block md:block md:text-xl mx-3'></div>
         <button  className="text-bgcust inter-medium mx-2 text-sm border-2 p-4 rounded-full border-bgcust lg:mr-10 md:mr-10 w-full md:w-36 lg:w-36">All Courses <span>&rarr;</span></button>
       </div>
       </div>
