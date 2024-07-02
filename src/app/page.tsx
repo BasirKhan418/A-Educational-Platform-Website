@@ -11,16 +11,18 @@ import Events from "@/utils/Events";
 import Achievements from "@/components/achievements";
 import Course from "@/utils/Course";
 import Blog from "@/utils/Blog";
+import FAQ from "@/utils/Faq";
 export default function LandingPage() {
   return (
     <div className="space-y-12">
       <Hero />
       <About />
-      <Achievements />
+      {/* <Achievements /> */}
       <Result/>  
       <Events />
       <Course/>
       <Blog/>
+      <FAQ/>
     </div>
   );
 }
