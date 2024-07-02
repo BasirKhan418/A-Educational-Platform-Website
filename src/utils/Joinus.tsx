@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button';
 import React from 'react';
 
 const JoinUsSection = () => {
@@ -11,12 +12,12 @@ const JoinUsSection = () => {
             Install our top-rated dropshipping app to your e-commerce site and get access to US Suppliers, AliExpress vendors, and the best dropshipping and custom products.
           </p>
           <div className="flex justify-center space-x-4 flex-wrap ">
-            <button  className="bg-bgcust text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-bgcust transition duration-300 inter-medium my-2 w-48 ">
-              Start Free Trial &rarr;
-            </button>
-            <button className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-semibold shadow-md hover:border-gray-300 transition duration-300 inter-medium my-2 w-48">
+            <Button className='rounded-full'>
+               Start Free Trial &rarr;
+            </Button>
+            <Button variant={"outline"} className='rounded-full' >
               Contact Us &rarr;
-            </button>
+            </Button>
           </div>
         </div>
       </div>
