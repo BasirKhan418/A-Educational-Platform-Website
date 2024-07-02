@@ -1,5 +1,6 @@
 import React from 'react';
 import CourseCard from '@/components/CourseCard';
+import Title from '@/components/title';
 
 interface Course {
   title: string;
@@ -63,12 +64,9 @@ const courses: Course[] = [
 
 const Course: React.FC = () => {
   return (
-    <>
-     <div className='lg:mx-40 '>
-          <h2 className="text-4xl inter-bold   mx-2 text-bgcust">Popular courses</h2>
-          <div className='h-[4px] w-[114px] bg-bgcust rounded mb-8 mx-2 my-1'></div>
-          </div>
-    <div className="flex flex-wrap justify-center ">
+    <section id="courses" className='section-width space-y-4'>
+     <Title title="Popular courses" />
+    <div className="flex flex-wrap ">
       {courses.map((course, index) => (
         <CourseCard key={index} {...course} />
       ))}
@@ -88,7 +86,7 @@ const Course: React.FC = () => {
         <button  className="text-bgcust inter-medium mx-2 text-sm border-2 p-4 rounded-full border-bgcust lg:mr-10 md:mr-10 w-full md:w-36 lg:w-36">All Courses <span>&rarr;</span></button>
       </div>
     </div>
-    </>
+    </section>
   );
 };
 

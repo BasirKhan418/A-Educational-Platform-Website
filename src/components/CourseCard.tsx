@@ -21,7 +21,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ title, duration, videos, studen
           <span className="text-white text-sm">{rating}</span>
           </div>
         </div>
-      <div className="px-6 py-4">
+      <div className=" py-4">
         <div className="font-bold text-xl text-bgcust mb-1 poppins-medium ">{title}</div>
         <p className="text-sm mb-4 poppins-bold" style={{color: "rgba(68, 68, 68, 0.47)"
 }}>

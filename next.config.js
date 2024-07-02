@@ -13,8 +13,13 @@ const config = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ["st3.depositphotos.com"],
-  }
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "st3.depositphotos.com",
+      },
+    ],
+  },
 };
 
 export default config;
