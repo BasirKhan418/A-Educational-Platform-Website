@@ -17,12 +17,19 @@ const Hero = () => {
                   Using highly personalised activities, videos and animations
                   you can energise your students.
                 </p>
-                <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-4 md:items-start md:justify-start lg:items-start lg:justify-start">
-                  <Button size={"lg"} className='rounded-full w-full text-lg py-6' >
+                <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row md:items-start md:justify-start lg:items-start lg:justify-start">
+                  <Button
+                    size={"lg"}
+                    className="w-full rounded-full py-6 text-lg md:max-w-[200px]"
+                  >
                     <span>Get Started</span>
                     <ArrowRight strokeWidth={1} size={20} />
                   </Button>
-                  <Button variant={"outline"} size={"lg"} className='rounded-full text-lg py-6' >
+                  <Button
+                    variant={"outline"}
+                    size={"lg"}
+                    className="w-full rounded-full py-6 text-lg md:max-w-[200px]"
+                  >
                     <span>How it works</span>
                     <ArrowRight strokeWidth={1} size={20} />
                   </Button>
