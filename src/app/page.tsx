@@ -17,7 +17,7 @@ export default function LandingPage() {
     <div className="space-y-12">
       <Hero />
       <About />
-      {/* <Achievements /> */}
+      <Achievements />
       <Result/>  
       <Events />
       <Course/>
