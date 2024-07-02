@@ -12,6 +12,9 @@ const config = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  images: {
+    domains: ["st3.depositphotos.com"],
+  }
 };
 
 export default config;

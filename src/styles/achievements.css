@@ -1,0 +1,24 @@
+.verticalDivisions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Ensure vertical divisions don't interfere with other content */
+}
+
+.division {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px; /* Width of the vertical line */
+  z-index: -0;
+  background-color: rgba(128, 128, 128, 0.321); /* Color of the vertical line */
+  opacity: 10;
+}
+
+.division:nth-child(1) { left: 10%; }
+.division:nth-child(2) { left: 30%; }
+.division:nth-child(3) { left: 50%; }
+.division:nth-child(4) { left: 70%; }
+.division:nth-child(5) { left: 90%; }
