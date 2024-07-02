@@ -4,7 +4,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div id="home">
+    <div id="home" className='flex justify-center items-center'>
       <div className="bg-white dark:bg-gray-900">
         <section className="bg-[#FCF8F1] bg-opacity-30 py-10 dark:bg-black sm:py-16 lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -66,27 +66,13 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              <div className="relative flex justify-center">
-                <div
-                  className="flex items-center justify-center rounded-3xl bg-bgcust "
-                  style={{
-                    height: "382px",
-                    width: "290px",
-                    borderRadius: "98.35px 98.35px 98.35px 6.15px",
-                  }}
-                >
-                  <img
-                    src="https://s3-alpha-sig.figma.com/img/03f1/9e27/7131b8e23e07d648f5a34d8f6ddd3cff?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aRN0lXk5lg~C2WxbKKKAl2rIH9bf~-zPVZ5rzKcezSO5hD~8wZhgRB9dPr8FicPgmJbOAq-1cTkEhccGBfA-F32Eya-ouVadsSoIRtB~LIT2E2mfG7TItsh8w6ckXEwjEchwOsw~WNSxvCzdALeipOEv3eidTopBwvZDROLUlVhowm7gmVCbwZoCQ5XjpZk8lR6vAqbGSAFh6CPQVodVdnhZf5CO6R9Xbx-6L2hS96nKEtwUN1Ak3ererCJH7RDuSjG3n40mttxCHJhTWyhd5ItJcYPVCac6g2dzHlNRQNOoSdu6IIFElRbqWiJorXyuXohOubrgLvO8F45OUwAofA__"
-                    alt=""
-                    className="h-80 object-cover"
-                  />
+              <div className="flex justify-center relative">
+                <div className="bg-bgcust flex justify-center items-center rounded-3xl " style={{ height: '382px', width: '290px', borderRadius: '98.35px 98.35px 98.35px 6.15px' }}>
+                  <img src="https://s3-alpha-sig.figma.com/img/03f1/9e27/7131b8e23e07d648f5a34d8f6ddd3cff?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aRN0lXk5lg~C2WxbKKKAl2rIH9bf~-zPVZ5rzKcezSO5hD~8wZhgRB9dPr8FicPgmJbOAq-1cTkEhccGBfA-F32Eya-ouVadsSoIRtB~LIT2E2mfG7TItsh8w6ckXEwjEchwOsw~WNSxvCzdALeipOEv3eidTopBwvZDROLUlVhowm7gmVCbwZoCQ5XjpZk8lR6vAqbGSAFh6CPQVodVdnhZf5CO6R9Xbx-6L2hS96nKEtwUN1Ak3ererCJH7RDuSjG3n40mttxCHJhTWyhd5ItJcYPVCac6g2dzHlNRQNOoSdu6IIFElRbqWiJorXyuXohOubrgLvO8F45OUwAofA__" alt="" className="object-cover h-[341px] w-[331px] mt-10" />
+                  
                 </div>
-                <div className="absolute right-0  top-60 sm:right-0 sm:top-48 md:right-28 md:top-48 lg:-right-3 lg:top-48">
-                  <img
-                    src="/herosvg.svg"
-                    alt=""
-                    className="h-40 object-cover md:h-80"
-                  />
+                <div className='absolute lg:-right-4  lg:top-52 md:top-52 sm:top-48 md:right-28 sm:right-0 right-0 top-60'>
+                <img src="/herosvg.svg" alt="" className="object-cover h-40 md:h-80" />
                 </div>
               </div>
             </div>

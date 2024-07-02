@@ -43,10 +43,10 @@ const Navbar = () => {
         `}
       </style>
       <nav
-        className={`fixed top-0 z-50 w-[100vw] h-20 flex justify-center items-center rounded ${
-          scrolling ? "backdrop-blur-xl" : ""
+        className={`fixed top-0 z-50 w-[100vw] h-20 flex justify-center items-center rounded  ${
+          scrolling &&!isOpen ? "backdrop-blur-xl" : ""
         
-        } ${isOpen == true ? "dark:bg-black bg-white bg-opacity-80 backdrop-filter backdrop-blur-xl" : ""} `}
+        } ${isOpen == true ? "dark:bg-black bg-white " : ""} `}
         id="navbar"
       >
         <div className="container px-6 py-4 mx-auto ">
@@ -59,7 +59,7 @@ const Navbar = () => {
             >
               <Link href={"/"}>
                 
-                  <img src="https://s3-alpha-sig.figma.com/img/3a45/7a59/a344c7df92387190a0c3dac850d8e0c2?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D~xgCoLmZCbrSBV~D2fK4xSuSjFLztGUdOrg~8PXzN0q9adE8iE5XN3KYA55ke9EX0V22USdJHuHwbzrQmYE5iDdfXuNZhnrkX-cMnEkpqVcDIXjP3UgyxYo-vgn6pOq3x8DJ93XIMvwOXJMqoaFWqviZyjpzy4n50DC2ijoPwDFx2Uj754-SvQ-u0LcrqXpBniJahW9cqRlaednohsujm9vrYQq2Cex7bC72gJhMigdFMU5bXOuMLaLg0C3Y5B~2-Dbkv~DzqATYV~8P-b7Oj0-iscFH3fJpP9iBqbu20FXv5xND3NrLxW1hzpIUdIZKeMLFsIHz-FVZqMqUnm0cA__" alt="" className="lg:w-16 lg:h-16 md:w-16 md:h-16 w-14 h-14 lg:h-16 lg:w-16 object-fit lg:mx-16 md:mx-4 mx-2" />
+                  <img src="https://s3-alpha-sig.figma.com/img/3a45/7a59/a344c7df92387190a0c3dac850d8e0c2?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D~xgCoLmZCbrSBV~D2fK4xSuSjFLztGUdOrg~8PXzN0q9adE8iE5XN3KYA55ke9EX0V22USdJHuHwbzrQmYE5iDdfXuNZhnrkX-cMnEkpqVcDIXjP3UgyxYo-vgn6pOq3x8DJ93XIMvwOXJMqoaFWqviZyjpzy4n50DC2ijoPwDFx2Uj754-SvQ-u0LcrqXpBniJahW9cqRlaednohsujm9vrYQq2Cex7bC72gJhMigdFMU5bXOuMLaLg0C3Y5B~2-Dbkv~DzqATYV~8P-b7Oj0-iscFH3fJpP9iBqbu20FXv5xND3NrLxW1hzpIUdIZKeMLFsIHz-FVZqMqUnm0cA__" alt="" className="lg:w-16 lg:h-16 md:w-16 md:h-16 w-14 h-14 lg:h-16 lg:w-16 object-fit lg:mx-16  md:mx-4 mx-2" />
               
               </Link>
 
