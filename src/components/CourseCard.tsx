@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, Video, Users, Star } from 'lucide-react';
+import { Clock, CirclePlay , Users, Star } from 'lucide-react';
 
 interface CourseCardProps {
   title: string;
@@ -35,7 +35,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ title, duration, videos, studen
           <span className="text-gray-500 text-sm mx-2">{duration}</span>
         </div>
         <div className="flex items-center mb-2">
-          <Video className="w-4 h-4 mr-1 text-gray-500" />
+          <CirclePlay className="w-4 h-4 mr-1 text-gray-500" />
           <span className="text-gray-500 text-sm mx-2">{videos} Video</span>
         </div>
         <div className="flex items-center mb-2">
