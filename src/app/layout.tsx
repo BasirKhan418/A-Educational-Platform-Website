@@ -3,6 +3,7 @@ import "@/styles/globals.css";
 import { GeistSans } from "geist/font/sans";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Navbar from "@/utils/Navbar";
+import Footer from "@/utils/Footer";
 export const metadata = {
   title: "EduCare Plus",
   description: "Best Offline Education Platform",
@@ -27,6 +28,7 @@ export default function RootLayout({
         >
           <Navbar />
           {children}
+        <Footer/>
         </ThemeProvider>
       </body>
     </html>
