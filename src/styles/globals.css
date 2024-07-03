@@ -163,3 +163,6 @@
   font-weight: 700;
   font-style: normal;
 }
+body{
+  scroll-behavior: smooth;
+}

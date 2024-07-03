@@ -9,28 +9,47 @@ const Result = () => {
     <section id="result" className="section-width space-y-8">
       <Title title="Our Results" />
       <div className=" flex flex-col items-center justify-center lg:mr-24">
-        <div className="grid grid-cols-1 place-items-center gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:place-items-start">
-          {Array<number>(8)
+        <div className="flex justify-center items-center flex-wrap ">
+          {Array<number>(5)
             .fill(0)
             .map((_, index) => (
               <div
                 key={index}
-                className="relative h-[331px] w-[268px] rounded-2xl bg-white text-center shadow-md"
+                className="relative h-[361px] w-[262px] rounded-2xl bg-white text-center shadow-md shadow-bgcust mx-2 lg:mx-6 my-2 lg:my-4 px-4"
+                style={{ borderRadius: "20px" }}
               >
-                <div className="relative">
+                 <div className='absolute top-2 right-6 w-[53px] h-[61px] z-20'>
+                    <img src="/goldmedal.svg" alt="" className=''/>
+                  </div>
+                <div className="relative flex justify-center items-center mt-4 z-10">
+                 
                   <img
-                    src="https://s3-alpha-sig.figma.com/img/e075/1b22/24b9a68402884a8f8b48f50360f215cf?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=a-xUnLTHr7NEnbXnp7nyCQMSZY8sCXC7Uq-T65N-1AV2p3vhHrbyOzSIziL0ov-45~-2e5NzabGkl-ncT9hADF4CbRlnIT8r1qyoTibxVIk1y34r4vOvaUrmvy9jLPqpBbWbIku2DLzn3FUNs-63XDJVhy~SiHeN5zpBrpqsYXUvmMMxHpRy5kVnCi1zNc2tTp9OlznRlaSnNQ0tmDfxbCdNcutiyH-6lckwXMS7hbjbBcjdTZ0oN8egt3C8OXPqalEWs0fnVxcbgMIvd9sIKc3MRQnJf23TN2mbuK~P95ul82LL3M3eXjPFLvx7oJ8877S3Wz9fH4lQApIA6gLs~g__"
+                    src="https://s3-alpha-sig.figma.com/img/8fb2/c341/eee5b05b3a5c9f2f0c33ea6665ec17fb?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KC-hT3mUbD6NNu7qLVMVAwV17-avmP6Dmef2VuGJ5SmUCfiocWED~zr8p3hX67QAOQYJ9x8vXwPKFJ6PkIKi3RDIQYVBcf8i7WBPCvSKk9SAqWP2UhK~7Z~yR~U5sfFSERZMjLrtganAug56rgYpwefrkD6LXZjTG9jiMHCP5IorlrGjQrfSEJuqlDRKZWywwyTLZpaY8sInKcXgYMgDM~j~AgXsCxwUOd6hib60xaoL3FYoo2leQELY1uSih7qOaz2wv~dZirTPVfKlflUlldcu-rAAbvx-V0aszQhE6Qm-e-hHtHB0SM-6EzdsZ089GGyxcIsMP1o889Sq5dibQQ__"
                     alt="Harry Dne"
-                    className="h-[331px] w-[268px] w-full object-cover "
-                    style={{ borderRadius: "20px" }}
+                    className="h-[216px] w-[216px] w-full object-cover border-4 border-bgcust"
+                    style={{ borderRadius: "50px" }}
                   />
-                  <div className="bg-bgresult absolute bottom-0 flex h-[122px] w-[268px] flex-col items-center justify-center rounded-b-2xl">
+                
+                  {/* <div className="bg-bgresult absolute bottom-0 flex h-[122px] w-[268px] flex-col items-center justify-center rounded-b-2xl">
                     <h3 className="roboto-bold text-2xl text-white">
                       Harry Dne
                     </h3>
                     <p className="roboto-bold py-2 text-2xl text-white">92%</p>
-                  </div>
+                  </div> */}
+                  
                 </div>
+               
+                <div className='absolute bottom-1/4 right-4 w-[230px] h-[66px] z-20'>
+                    <img src="/banner.svg" alt="" className='relative'/>
+                    <h1 className='text-white inter-bold text-2xl absolute top-[25px] left-[85px]'>99.0%</h1>
+                  </div>
+                  <div className='poppins-medium mt-14'>
+                    <h1 className='text-xl text-black font-semibold'>Sanchi Ramteke</h1>
+                    <p className='text-xs text-bgcust mt-4'>
+                    Vincent Pallotti
+                    School, Nagpur
+                    </p>
+                  </div>
               </div>
             ))}
         </div>
