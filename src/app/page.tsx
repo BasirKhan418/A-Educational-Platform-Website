@@ -12,6 +12,7 @@ import Achievements from "@/components/achievements";
 import Course from "@/utils/Course";
 import Blog from "@/utils/Blog";
 import FAQ from "@/utils/Faq";
+import Banner from "@/utils/Banner";
 export default function LandingPage() {
   return (
     <div className="space-y-12">
@@ -23,6 +24,7 @@ export default function LandingPage() {
       <Course/>
       <Blog/>
       <FAQ/>
+      {/* <Banner/> */}
     </div>
   );
 }
