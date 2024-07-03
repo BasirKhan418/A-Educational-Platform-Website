@@ -18,6 +18,10 @@ const config = {
         protocol: "https",
         hostname: "st3.depositphotos.com",
       },
+      {
+        protocol: "https",
+        hostname: "s3-alpha-sig.figma.com",
+      }
     ],
   },
 };
