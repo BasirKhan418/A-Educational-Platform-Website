@@ -64,7 +64,7 @@ const courses: Course[] = [
 
 const Course: React.FC = () => {
   return (
-    <section id="courses" className='section-width space-y-4'>
+    <section id="course" className='section-width space-y-4'>
      <Title title="Popular courses" />
     <div className="flex flex-wrap justify-center items-center lg:justify-normal lg:items-start md:justify-normal md:items-start">
       {courses.map((course, index) => (
