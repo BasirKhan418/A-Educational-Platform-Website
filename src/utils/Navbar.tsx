@@ -167,7 +167,7 @@ const Navbar = () => {
                   <Link href="/#about">
                   <motion.li
                   className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 text-primary
-                    text-lg lg:text-base md:text-base sm:text-lg  ${data6?"roboto-bold text-black":"roboto-medium "} text-gray-800`}
+                    text-lg lg:text-base md:text-base sm:text-lg  ${data6?"inter-bold text-black":"roboto-medium text-gray-500 font-semibold"} text-gray-800`}
                     whileTap={{ scale: 0.9, rotate: 1 }}
                     transition={{ type: "spring", stiffness: 400 }}
                     onMouseEnter={() => {
@@ -193,7 +193,7 @@ const Navbar = () => {
                 <Link href={"/#acievement"}>
                   <motion.li
                       className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 text-primary
-                        text-lg lg:text-base md:text-base sm:text-lg  ${data1?"roboto-bold text-black":"roboto-medium "} text-gray-800`}
+                        text-lg lg:text-base md:text-base sm:text-lg  ${data1?"inter-bold text-black":"roboto-medium text-gray-500 font-semibold"} text-gray-800`}
                     whileTap={{ scale: 0.9, rotate: 1 }}
                     transition={{ type: "spring", stiffness: 400 }}
                     onMouseEnter={() => {
@@ -220,7 +220,7 @@ const Navbar = () => {
                 <Link href={"/#event"}>
                   <motion.li
                   className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 text-primary
-                    text-lg lg:text-base md:text-base sm:text-lg  ${data3?"roboto-bold text-black":"roboto-medium "} text-gray-800`}
+                    text-lg lg:text-base md:text-base sm:text-lg  ${data3?"inter-bold text-black":"roboto-medium text-gray-500 font-semibold"} text-gray-800`}
                     whileTap={{ scale: 0.9, rotate: 1 }}
                     transition={{ type: "spring", stiffness: 400 }}
                     onMouseEnter={() => {
@@ -245,7 +245,7 @@ const Navbar = () => {
                <Link  href={"/#course"}>
                   <motion.li
                                className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 text-primary
-                                text-lg lg:text-base md:text-base sm:text-lg  ${data4?"roboto-bold text-black":"roboto-medium "} text-gray-800`}
+                                text-lg lg:text-base md:text-base sm:text-lg  ${data4?"inter-bold text-black":"roboto-medium text-gray-500 font-semibold"} text-gray-800`}
                     whileTap={{ scale: 0.9, rotate: 1 }}
                     transition={{ type: "spring", stiffness: 400 }}
                     onMouseEnter={() => {

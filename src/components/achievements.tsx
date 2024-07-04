@@ -42,9 +42,9 @@ const Achievements = () => {
     
     
     return (
-      <div className="relative w-full bg-gray-100">
+      <div className="relative w-full bg-gray-100" >
         <section
-          id="achievements"
+          id="acievement"
           className="z-10 section-width relative min-h-[75vh] py-12"
         >
           <Title title="Achievements" className="inline" />

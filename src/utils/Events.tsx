@@ -5,7 +5,7 @@ import React from 'react';
 
 const Events = () => {
   return (
-    <section id="events" className='section-width space-y-4'>
+    <section id="event" className='section-width space-y-4'>
     <Title title="Our Event" />
       <div >
       <p className="text-gray-600 max-w-4xl text-md poppins-medium">
