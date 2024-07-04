@@ -1,12 +1,11 @@
 import React from 'react';
-import JoinUsSection from './Joinus';
 import Title from '@/components/title';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
 const Result = () => {
   return (
-    <section id="result" className="section-width space-y-8">
+    <section id="result" className="section-width space-y-8 poppins-bold my-20">
       <Title title="Our Results" />
       <div className=" flex flex-col items-center justify-center lg:mr-24">
         <div className="flex justify-center items-center flex-wrap ">
@@ -68,7 +67,7 @@ const Result = () => {
             <ArrowRight strokeWidth={1} size={14} />
         </Button> 
         </div>
-        <JoinUsSection />
+    
       </div>
     </section>
   );

@@ -13,13 +13,15 @@ import Course from "@/utils/Course";
 import Blog from "@/utils/Blog";
 import FAQ from "@/utils/Faq";
 import Banner from "@/utils/Banner";
+import JoinUsSection from "@/utils/Joinus";
 export default function LandingPage() {
   return (
-    <div className="space-y-12">
+    <div className="overflow-y-hidden">
       <Hero />
       <About />
       <Achievements />
       <Result/>  
+      <JoinUsSection />
       <Events />
       <Course/>
       <Blog/>
