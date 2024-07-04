@@ -73,7 +73,7 @@ export default function Footer() {
                 <li>
                   <Link href="#" className="flex items-center space-x-2 py-1">
                     <ChevronsRight className="w-4 h-4" />
-                    <span>Terms of use</span>
+                    <span>Terms of Use</span>
                   </Link>
                 </li>
                 <li>
