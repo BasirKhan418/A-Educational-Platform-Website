@@ -7,7 +7,7 @@ import { ArrowRight } from 'lucide-react';
 
 const About = () => {
     return (
-      <section id="about" className="section-width relative min-h-screen">
+      <section id="about" className="section-width relative min-h-screen poppins-bold my-10">
         <Title title="About us" className="inline" />
         <div className=" flex flex-col md:flex-row h-full items-center gap-32 pb-10">
           {/* About description */}

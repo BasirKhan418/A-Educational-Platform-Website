@@ -42,7 +42,7 @@ const Achievements = () => {
     
     
     return (
-      <div className="relative w-full bg-gray-100" >
+      <div className="relative w-full bg-gray-100 my-10 poppins-bold" >
         <section
           id="acievement"
           className="z-10 section-width relative min-h-[75vh] py-12"

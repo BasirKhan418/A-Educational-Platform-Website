@@ -64,15 +64,19 @@ const courses: Course[] = [
 
 const Course: React.FC = () => {
   return (
-    <section id="course" className='section-width space-y-4'>
-     <Title title="Popular courses" />
-    <div className="flex flex-wrap justify-center items-center lg:justify-normal lg:items-start md:justify-normal md:items-start">
+    <section id="course" className='section-width space-y-4 poppins-bold my-28'>
+      <div className='mb-20'>
+     <Title title="Popular courses " className='mx-2' />
+     </div>
+    <div className="flex flex-wrap justify-center items-center w-full ">
+          
       {courses.map((course, index) => (
         <CourseCard key={index} {...course} />
       ))}
+      
      
     </div>
-    <div className='flex justify-center items-center'>
+    <div className='flex justify-center items-center '>
     <div className="flex lg:justify-between md:justify-between xl:justify-between justify-center items-center relative">
         <a href="#" className="text-bgcust inter-bold mx-2 text-2xl hidden lg:block md:block md:text-xl">View All Courses</a>
         <div className='hidden lg:block md:block'>
