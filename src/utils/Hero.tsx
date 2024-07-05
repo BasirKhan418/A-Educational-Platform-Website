@@ -16,8 +16,7 @@ const Hero = () => {
                   Best Offline Platform For Education
                 </h1>
                 <p className="inter-medium mt-2 text-center text-sm text-secondary dark:text-gray-300 sm:text-sm md:text-left lg:mt-4 lg:h-[32px] lg:w-[425px] lg:text-left">
-                  Using highly personalised activities, videos and animations
-                  you can energise your students.
+                Nurturing Individual Potential: Nagpur's Leading Coaching Center Since 2012. Growing Annually.
                 </p>
                 <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row md:items-start md:justify-start lg:items-start lg:justify-start">
                   <Button
