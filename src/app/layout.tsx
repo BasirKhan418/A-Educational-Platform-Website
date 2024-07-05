@@ -4,6 +4,7 @@ import { GeistSans } from "geist/font/sans";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Navbar from "@/utils/Navbar";
 import Footer from "@/utils/Footer";
+import NextTopLoader from 'nextjs-toploader';
 export const metadata = {
   title: "EduCare Plus",
   description: "Best Offline Education Platform",
@@ -18,7 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
       <body className="dark:bg-black bg-white ">
-       
+      <NextTopLoader
+  color="#02B3E4"
+  showSpinner={false}
+/>
           
           <ThemeProvider
           attribute="class"

@@ -4,26 +4,26 @@ const aboutItems = {
         allItems : [
             {
                 id: 1, 
-                title: "Flexible schedule", 
-                description: "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.", 
+                title: "Best Teaching Team", 
+                description: "We enhance the abilities of to students overcome their academic  obstacles.", 
                 icon: "/about/one.svg"
             },
             {
                 id: 2, 
-                title: "Flexible schedule", 
-                description: "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.", 
+                title: "Quick Response Team", 
+                description: "Quick Response Team (Q.R.T.)for individual attention to students.", 
                 icon: "/about/two.svg"
             },
             {
                 id: 3, 
-                title: "Flexible schedule", 
-                description: "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.", 
+                title: "Performance Improvement", 
+                description: "Performance Improvement program (P.I.P.). A program to enhance Exam scores.", 
                 icon: "/about/three.svg"
             },
             {
                 id: 4, 
-                title: "Flexible schedule", 
-                description: "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.", 
+                title: "Counselling Department", 
+                description: "A healthy mind & disciplined approach developed by eminent Counsellors.", 
                 icon: "/about/four.svg"
             }
         ]

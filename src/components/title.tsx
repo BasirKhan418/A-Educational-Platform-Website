@@ -11,7 +11,7 @@ const Title = ({
   title?: string;
 }) => {
   return (
-    <h2 className={`inline text-3xl font-bold pb-1after:w-3/4 border-b-4 border-primary text-primary md:text-5xl after:h-1 ${className}`}>
+    <h2 className={`inline text-3xl font-bold pb-1 after:w-3/4 border-b-4 border-primary text-primary md:text-4xl after:h-1 ${className}`}>
       {title}
       {/* <hr className='w-1/4 h-1 bg-primary' /> */}
     </h2>
