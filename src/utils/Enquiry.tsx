@@ -37,7 +37,6 @@ const EnquiryForm = () => {
             body: JSON.stringify(enqform)
           })
           const result = await res.json()
-          console.log(result)
           setLoading(false)
           if(result.status=="success"){
             toast.success('Form submitted successfully')
