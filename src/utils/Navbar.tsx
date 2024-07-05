@@ -3,9 +3,9 @@ import React, { use, useEffect } from "react";
 import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-
+import { usePathname } from "next/navigation";
 const Navbar = () => {
-
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [data1, setData1] = useState(false);
   const [data2, setData2] = useState(false);
@@ -44,9 +44,9 @@ const Navbar = () => {
       </style>
       <nav
         className={`fixed top-0 z-50 w-[100vw] h-20 flex justify-center items-center rounded  ${
-          scrolling &&!isOpen ? "backdrop-blur-xl" : ""
+          scrolling &&!isOpen? "backdrop-blur-xl " : ""
         
-        } ${isOpen == true ? "dark:bg-black bg-white " : ""} `}
+        } ${isOpen == true ? "dark:bg-black bg-white " : ""} ${pathname=="/enquiry"?"bg-bgcust":"bg-transparent"}`}
         id="navbar"
       >
         <div className="container px-6 py-4 mx-auto ">
@@ -127,9 +127,9 @@ const Navbar = () => {
               <div
               className={` ${
                 isOpen == true
-                  ? "translate-x-0 opacity-100 border2 border2 w-full h-[100vh] bg-opacity-80 backdrop-filter backdrop-blur-xl"
+                  ? "translate-x-0 opacity-100 border2 border2 w-full h-[100vh] bg-opacity-80 backdrop-filter backdrop-blur-xl "
                   : "opacity-0 translate-x-full"
-              } absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out dark:bg-black bg-white lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center `}
+              } absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out dark:bg-black bg-white lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center  `}
             >
               <motion.div
                 className="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8"
@@ -139,7 +139,7 @@ const Navbar = () => {
               >
                 <Link href={"/"}>
                   <motion.li
-                  className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 text-primary
+                  className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 ${pathname=="/enquiry"?"text-white":"text-primary"}
                     text-lg lg:text-base md:text-base sm:text-lg  ${data2?"inter-bold text-black":"roboto-medium text-gray-500 font-semibold"} text-gray-800`}
                     whileTap={{ scale: 0.9, rotate: 1 }}
                     transition={{ type: "spring", stiffness: 400 }}
@@ -166,7 +166,7 @@ const Navbar = () => {
                   </Link>
                   <Link href="/#about">
                   <motion.li
-                  className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 text-primary
+                  className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 ${pathname=="/enquiry"?"text-white":"text-primary"}
                     text-lg lg:text-base md:text-base sm:text-lg  ${data6?"inter-bold text-black":"roboto-medium text-gray-500 font-semibold"} text-gray-800`}
                     whileTap={{ scale: 0.9, rotate: 1 }}
                     transition={{ type: "spring", stiffness: 400 }}
@@ -192,7 +192,7 @@ const Navbar = () => {
                   </Link>
                 <Link href={"/#acievement"}>
                   <motion.li
-                      className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 text-primary
+                      className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 ${pathname=="/enquiry"?"text-white":"text-primary"}
                         text-lg lg:text-base md:text-base sm:text-lg  ${data1?"inter-bold text-black":"roboto-medium text-gray-500 font-semibold"} text-gray-800`}
                     whileTap={{ scale: 0.9, rotate: 1 }}
                     transition={{ type: "spring", stiffness: 400 }}
@@ -219,7 +219,7 @@ const Navbar = () => {
 
                 <Link href={"/#event"}>
                   <motion.li
-                  className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 text-primary
+                  className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 ${pathname=="/enquiry"?"text-white":"text-primary"}
                     text-lg lg:text-base md:text-base sm:text-lg  ${data3?"inter-bold text-black":"roboto-medium text-gray-500 font-semibold"} text-gray-800`}
                     whileTap={{ scale: 0.9, rotate: 1 }}
                     transition={{ type: "spring", stiffness: 400 }}
@@ -244,7 +244,7 @@ const Navbar = () => {
                 </Link>
                <Link  href={"/#course"}>
                   <motion.li
-                               className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 text-primary
+                               className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 ${pathname=="/enquiry"?"text-white":"text-primary"}
                                 text-lg lg:text-base md:text-base sm:text-lg  ${data4?"inter-bold text-black":"roboto-medium text-gray-500 font-semibold"} text-gray-800`}
                     whileTap={{ scale: 0.9, rotate: 1 }}
                     transition={{ type: "spring", stiffness: 400 }}

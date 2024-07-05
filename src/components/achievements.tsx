@@ -17,24 +17,27 @@ import styles from '@/styles/achievements.css'
 const Achievements = () => {
     const testimonials = [
       {
-        name: "Henny Wilson",
-        title: "Lorem ipsum lorem",
-        content:
-          "Lorem ipsum is placehext commonly. Lorem ipsu is placeholder text common Lorem ipsum is placehor text commonly.",
+        name: "Mr. Dinesh Gour",
+        title: `Inspiring Men’s of Nagpur Award `,
+        year:"#YEAR 2022",
+        post:
+          "MD &CEO",
         image: "/api/placeholder/400/300",
       },
       {
-        name: "Jane Doe",
-        title: "Product Manager",
-        content:
-          "Another great testimonial showcasing our achievements and the impact of our work.",
+        name: "Mr. Dinesh Gour",
+        title: `Inspiring Men’s of Nagpur Award `,
+        year:"#YEAR 2022",
+        post:
+          "MD &CEO",
         image: "/api/placeholder/400/300",
       },
       {
-        name: "John Smith",
-        title: "Senior Developer",
-        content:
-          "A third testimonial highlighting the success and achievements of our team.",
+        name: "Mr. Dinesh Gour",
+        title: `Inspiring Men’s of Nagpur Award `,
+        year:"#YEAR 2022",
+        post:
+          "MD &CEO",
         image: "/api/placeholder/400/300",
       },
     ];
@@ -42,31 +45,29 @@ const Achievements = () => {
     
     
     return (
-      <div className="relative w-full bg-gray-100 my-10 poppins-bold" >
+      <div className="relative w-full bg-gray-100 my-10 poppins-bold " >
         <section
           id="acievement"
           className="z-10 section-width relative min-h-[75vh] py-12"
         >
-          <Title title="Achievements" className="inline" />
+          <Title title="Achievements" className=" text-2xl inline" />
 
           <div className="flex flex-col items-start space-y-8 md:flex-row md:justify-between md:space-x-8 md:space-y-0">
-            <div className="flex min-h-[40vh] flex-1 flex-col justify-center md:max-w-md">
-              <h3 className="mb-4 text-3xl font-semibold md:text-5xl">
-                What we have <span className="text-cyan-500">achieved</span> in
-                this place...
+            <div className="flex min-h-[40vh] flex-1 flex-col justify-center md:max-w-md my-20">
+              <h3 className="mb-4 text-2xl font-semibold md:text-4xl poppins-bold lg:m-0 md:m-0 m-2">
+              Milestones Reached in Our Educare.
               </h3>
-              <p className="mb-4 text-lg text-gray-600">
-                Lorem ipsum is placehold text commonly. Lorem ipsum is
-                placeholder text commonly.
+              <p className="mb-4 text-sm text-gray-600 w-56 my-4 ">
+              Transforming Education in Nagpur Since 2012: Pioneering Growth, Excellence, and Innovation.
               </p>
             </div>
 
-            <div className="w-full md:w-1/2">
-              <Carousel className="mx-auto max-md:max-w-[225px]">
+            <div className="lg:w-[663px] w-full poppins-medium ">
+              <Carousel className=" max-md:max-w-md lg:my-20 ">
                 <CarouselContent>
                   {testimonials.map((testimonial, index) => (
                     <CarouselItem key={index}>
-                      <Card className="mx-auto max-w-[225px] md:max-w-md ">
+                      <Card className="mx-auto max-w-[225px] md:max-w-xl border-2 border-blue-200">
                         <CardContent className="flex min-h-[40vh] flex-col items-center p-0 md:flex-row md:items-stretch md:gap-4">
                           <div className="md:w-1/2">
                             <Image
@@ -74,9 +75,9 @@ const Achievements = () => {
                               height={300}
                               // src={testimonial.image}
                               src={
-                                "https://st3.depositphotos.com/7677414/16494/i/450/depositphotos_164940980-stock-photo-low-key-golden-trophy-blur.jpg"
+                                "https://s3-alpha-sig.figma.com/img/576e/f29f/f98de2b143921391ff7d1ad87072e6c0?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LtgKp85sNS703Jjzcly9CpCk6qXjZ0hg3oNijPsDNsMleIAtcxW-G1Q3PLj7mEA8iBxGPNQKrJYkeRUR9WjV~CSoCFZBSWGUnV6nhC5muUDL5~ENbLAXBu8AukvTOvLXujQOVdpoOcH~lb~UMm0OPBb2QMWMX1GnZbzLVLxJ0GPjSzVbgqgiH-LrhIx8GXlXADwPNdATGrMisuhCDRbkJsG1JrXcOzYB3gdD~D8JWRMN6oLGyPoHsTZChVXq2n0vR--oUepBe6LWMOtaU~2Y-2ZUqUnN2dVYzaUjSCZfjl87qDrqSEawbAZ7Q3zwNSRfvypGoPkt0JB6xPRy1sVG6Q__"
                               }
-                              alt={`${testimonial.name}'s portrait`}
+                              alt={`${testimonial.title}'s portrait`}
                               className=" h-full w-full flex-1 rounded-md object-cover object-center"
                             />
                           </div>
@@ -91,15 +92,18 @@ const Achievements = () => {
                                 ))}
                               </div>
                             </div>
+                            <p className="mb-4  font-semibold text-gray-400 w-40">
+                              {testimonial.title}
+                            </p>
                             <p className="mb-4  font-semibold text-gray-400">
-                              {testimonial.content}
+                              {testimonial.year}
                             </p>
                             <div>
-                              <h4 className="font-semibold">
+                              <h4 className="">
                                 {testimonial.name}
                               </h4>
-                              <p className="text-sm text-gray-500">
-                                {testimonial.title}
+                              <p className="text-xs text-gray-500">
+                                {testimonial.post}
                               </p>
                             </div>
                           </div>

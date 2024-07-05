@@ -14,9 +14,11 @@ const About = () => {
           <div className="flex md:w-1/4 flex-col ">
             <div className='max-md:mt-8'>
               <SubTitle title="Why choose us?" />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                laksjdflkja sldkfj laskdjf asjdflkjalskdjf
+              <h3 className='text-lg my-2'>
+                Vision
+              </h3>
+              <p className='poppins-medium text-gray-500 my-2'>
+              Pioneering innovative education through technology and modern study patterns.
               </p>
             </div>
             <div className="space-y-4">
