@@ -3,7 +3,7 @@ import { Circle } from '@/components/ui/circle';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
-
+import Link from 'next/link';
 const Hero = () => {
   return (
     <div id="home" className="flex items-center justify-center">
@@ -19,6 +19,7 @@ const Hero = () => {
                 Nurturing Individual Potential: Nagpur's Leading Coaching Center Since 2012. Growing Annually.
                 </p>
                 <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row md:items-start md:justify-start lg:items-start lg:justify-start">
+                  <Link href={"/enquiry"}>
                   <Button
                     size={"lg"}
                     className="w-full rounded-full py-6 text-lg md:max-w-[200px]"
@@ -26,6 +27,8 @@ const Hero = () => {
                     <span>Get Started</span>
                     <ArrowRight strokeWidth={1} size={20} />
                   </Button>
+                  </Link>
+                  <Link href={"/enquiry"}>
                   <Button
                     variant={"outline"}
                     size={"lg"}
@@ -34,6 +37,7 @@ const Hero = () => {
                     <span>How it works</span>
                     <ArrowRight strokeWidth={1} size={20} />
                   </Button>
+                  </Link>
                 </div>
                 <div className="mt-8">
                   <div className="flex space-x-8 sm:space-x-14 md:space-x-14 lg:space-x-14">
