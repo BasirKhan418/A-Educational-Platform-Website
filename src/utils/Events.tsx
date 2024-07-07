@@ -4,6 +4,39 @@ import Link from 'next/link';
 import React from 'react';
 
 const Events = () => {
+  const event = [
+    {
+      "event": "Felicitation",
+      "description": "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
+      "image": "/event/feliciation.jpeg"
+    },
+    {
+      "event": "Children's Day",
+      "description": "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
+      "image": "/event/children.jpeg"
+    },
+    {
+      "event": "Garba Night",
+      "description": "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
+      "image": "/event/garba.jpeg"
+    },
+    {
+      "event": "Picnic",
+      "description": "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
+      "image": "/event/picnic.jpeg"
+    },
+    {
+      "event": "Diwali",
+      "description": "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
+      "image": "https://s3-alpha-sig.figma.com/img/8949/7328/664c60ad2bc301a4e7b821092a5075c0?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ESsX-uV~xWZJhfBnJxLLmEHXO1CYtKWOK0Dx529Jgs~IYl2gm~~-2rwmhgD90lIEM6d5Ztr0cKj3q4ilqmgNDMaAEREqxG-Q7UhtaBajYJpBmk9pUeL5oacoMA~hc8H6vUbMLPTwQMT6himqr24JtY8YP7MxKDom0nTTOKNhn9WL1a6nVxFeBjzRZSV65ipCrhihHuwaFKrCIocl9JEHIxnpaVgALhuTY0fzxLKiBJB5NjhcvdRJzfHjAGt6xR~7vGWR99Xkw73ZMfCzrR-PvLbG1PTfkFkFXpXu09yOeSb85neDEsHNQLClAPNrGK~vxSW88cMjV7cP~TY-wmItPQ__"
+    },
+    {
+      "event": "Farewell",
+      "description": "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
+      "image": "/event/farewell.jpeg"
+    }
+  ]
+  
   return (
     <section id="event" className='section-width space-y-4 poppins-bold'>
     <Title title="Our Event" className='lg:mx-2'/>
@@ -17,18 +50,18 @@ const Events = () => {
       <div className="flex justify-center items-center flex-col w-full">
       <div className='flex justify-center items-center flex-col'>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6   ">
-        {Array(6).fill().map((_, index) => (
+        {event.map((item, index) => (
           <div key={index} className="bg-white rounded-lg  text-center lg:h-[426px] lg:w-[360px] md:h-[426px] md:w-[360px] h-[400px] w-[320px]  roboto-medium my-4 mx-2" style={{borderLeft:"1px solid #02B3E4",borderRight:"1px solid #02B3E4"}}>
             <img
-              src="https://s3-alpha-sig.figma.com/img/b48e/2933/8f6c330b4f0881bf773b3f24635ee909?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pzd7DsH~ipLA1vR35hIvjAgrHs9LbvnEFkkW0AjCt~2tdjPW2Tn3pNO8mJx5u-DN15h~u68YqjSpJG8f8O9Hp34Nds~i0DM~Epppz62PLBmu3OqfUhXBx1gECm78kUPC48VKTzSP~9Hia9yiTSVnapEnDc8UJTQiwhfGZqSQ4zDBUzeTsl6FoRp1b-M-pgSNI5s-b-M~1~BErSvs3gLlgfctTcIIbikrnI7lf63o3uqUZzz4br8qkDcAdLeUfwGbPKF1dSIpkcQzBnAZXCon8Pi0kikFU5OpA-0uq~KQK9NyBngkjo9nXJZGtnRdyTgKmd9a5LxCtnpXoRG8g1rjqQ__"
-              alt="Consequat"
+              src={item.image}
+              alt={item.event}
               style={{borderLeft:"1px solid #02B3E4",borderRight:"1px solid #02B3E4"}}
               className=" object-cover mb-4 rounded-lg h-[227px] w-[360px]"
             />
-            <h3 className="text-xl font-bold  text-left px-4">Consequat</h3>
+            <h3 className="text-xl font-bold  text-left px-4">{item.event}</h3>
             <p className="text-gray-400 text-left px-4 text-sm my-2">16 January 2017</p>
             <p className="text-gray-400 poppins-medium  px-3 w-[321px] text-left">
-              Lorem ipsum is placeholder text commonly used in the graphic, print mockups.
+             {item.description}
             </p>
           </div>
         ))}

@@ -17,30 +17,57 @@ import styles from '@/styles/achievements.css'
 const Achievements = () => {
     const testimonials = [
       {
-        name: "Mr. Dinesh Gour",
-        title: `Inspiring Men’s of Nagpur Award `,
-        year:"#YEAR 2022",
-        post:
-          "MD &CEO",
-        image: "/api/placeholder/400/300",
+        "name": "Mr. Dinesh Gour",
+        "title": "Inspiring Men’s of Nagpur Award",
+        "year": "#YEAR 2018",
+        "post": "MD & CEO",
+        "image": "/achievement/2018.jpg"
+
       },
       {
-        name: "Mr. Dinesh Gour",
-        title: `Inspiring Men’s of Nagpur Award `,
-        year:"#YEAR 2022",
-        post:
-          "MD &CEO",
-        image: "/api/placeholder/400/300",
+        "name": "Mr. Dinesh Gour",
+        "title": "Times Business Award",
+        "year": "#YEAR 2019",
+        "post": "MD & CEO",
+        "image": "/achievement/2019.jpg"
       },
       {
-        name: "Mr. Dinesh Gour",
-        title: `Inspiring Men’s of Nagpur Award `,
-        year:"#YEAR 2022",
-        post:
-          "MD &CEO",
-        image: "/api/placeholder/400/300",
+        "name": "Mr. Dinesh Gour",
+        "title": "Times Top Coaching Institute Award",
+        "year": "#YEAR 2020",
+        "post": "MD & CEO",
+        "image": "/achievement/2020.jpg"
       },
-    ];
+      {
+        "name": "Mr. Dinesh Gour",
+        "title": "Times Business Award",
+        "year": "#YEAR 2021",
+        "post": "MD & CEO",
+        "image": "/achievement/2021.jpg"
+      },
+      {
+        "name": "Mr. Dinesh Gour",
+        "title": "Inspiring Men’s of Nagpur Award",
+        "year": "#YEAR 2022",
+        "post": "MD & CEO",
+        "image": "/achievement/2022.jpg"
+      },
+      {
+        "name": "Mr. Dinesh Gour",
+        "title": "Times Business Leadership Award",
+        "year": "#YEAR 2022",
+        "post": "MD & CEO",
+        "image": "/achievement/2023.jpg"
+      },
+      {
+        "name": "Mr. Dinesh Gour",
+        "title": "ET Icons Of Nagpur Award",
+        "year": "#YEAR 2024",
+        "post": "MD & CEO",
+        "image": "https://s3-alpha-sig.figma.com/img/da4e/bec6/de15ac4c3170f05af72fb6b5f7043599?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qZrG9ADSaocR3b5TUPf~hqfLfXGaQ97pXB4FWjvHpzRirzH7T2S4~pYQpysETUyHf1PHpzN-Dk2pPR-1pT3hga11526qKCwIiv7YU9F4qhzKQu0oZb--3Kl5pFfgKHJ6atcd~tjROvf58vz1DlL9JkvFYoB0wjb6vlXQMUOqAuRO1wBV5W-LZ3Qd1b9AHB-SoucsA68qKFuQHZ9V~AiF5nNTGZx-ShiEOOqohcZ~lxhtYk~JgFfWA74JXcPbflxBbzOFFakxWGGnMJtNE6fURzsuf6LTBeS~1GiMZJHN2q3pfvm8EvZPo4CI5l4B67u49UfkJLa~QQ5FcvUOz0zc3Q__"
+      }
+    ]
+    
 
     
     
@@ -73,10 +100,7 @@ const Achievements = () => {
                             <Image
                               width={400}
                               height={300}
-                              // src={testimonial.image}
-                              src={
-                                "https://s3-alpha-sig.figma.com/img/576e/f29f/f98de2b143921391ff7d1ad87072e6c0?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LtgKp85sNS703Jjzcly9CpCk6qXjZ0hg3oNijPsDNsMleIAtcxW-G1Q3PLj7mEA8iBxGPNQKrJYkeRUR9WjV~CSoCFZBSWGUnV6nhC5muUDL5~ENbLAXBu8AukvTOvLXujQOVdpoOcH~lb~UMm0OPBb2QMWMX1GnZbzLVLxJ0GPjSzVbgqgiH-LrhIx8GXlXADwPNdATGrMisuhCDRbkJsG1JrXcOzYB3gdD~D8JWRMN6oLGyPoHsTZChVXq2n0vR--oUepBe6LWMOtaU~2Y-2ZUqUnN2dVYzaUjSCZfjl87qDrqSEawbAZ7Q3zwNSRfvypGoPkt0JB6xPRy1sVG6Q__"
-                              }
+                              src={testimonial.image}
                               alt={`${testimonial.title}'s portrait`}
                               className=" h-full w-full flex-1 rounded-md object-cover object-center"
                             />

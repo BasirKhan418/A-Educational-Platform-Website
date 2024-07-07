@@ -73,7 +73,7 @@ const Hero = () => {
               </div>
               <div className="relative flex justify-center">
                 <div
-                  className="relative flex items-center justify-center rounded-3xl bg-bgcust "
+                  className="relative flex items-end rounded-3xl bg-bgcust "
                   style={{
                     height: "382px",
                     width: "290px",
@@ -97,12 +97,12 @@ const Hero = () => {
                   <Circle className="absolute bottom-10 right-0" size="lg" variant='white' />
 
                   <Image
-                    height={341}
+                    height={349}
                     priority
-                    width={331}
-                    src="https://s3-alpha-sig.figma.com/img/03f1/9e27/7131b8e23e07d648f5a34d8f6ddd3cff?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aRN0lXk5lg~C2WxbKKKAl2rIH9bf~-zPVZ5rzKcezSO5hD~8wZhgRB9dPr8FicPgmJbOAq-1cTkEhccGBfA-F32Eya-ouVadsSoIRtB~LIT2E2mfG7TItsh8w6ckXEwjEchwOsw~WNSxvCzdALeipOEv3eidTopBwvZDROLUlVhowm7gmVCbwZoCQ5XjpZk8lR6vAqbGSAFh6CPQVodVdnhZf5CO6R9Xbx-6L2hS96nKEtwUN1Ak3ererCJH7RDuSjG3n40mttxCHJhTWyhd5ItJcYPVCac6g2dzHlNRQNOoSdu6IIFElRbqWiJorXyuXohOubrgLvO8F45OUwAofA__"
+                    width={280}
+                    src="https://s3-alpha-sig.figma.com/img/ecac/6553/71158b96468b91abfea06a320b329870?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dAuH5Yy-Ii6VjKPSYkAyjyRGca7eq6LuFBT4jvm7GEuQtrWVZY2agQOZNSCsBR9QgiOG3ChbgTPVZDkuu6~1m4WAdaBezUYLap08mpAi8EMCuHHDPIayj~tKYUspzfxCj7mi1YsvjTbSkavT7iooHzyMivPd9zoLoGB~yxrbFB1yvKXPv7L2dCxI1CAh01T3eTrpJkqsnLGdGDac4kKO8u3STr3brAb8KDNpDgjclScOpfRB4v3GHWFF25mxUZxjxBTlqQE7mq7UoCjUPaRecCHg~ousJMdvvja1Fcpav4zntz8F5F8ye2pmXclrqaPktmHx-uTchhzX~G1-7JOlOQ__"
                     alt=""
-                    className="mt-10 h-[341px] w-[331px] object-cover"
+                    className="mt-10 h-[309px] w-[240px] object-cover"
                   />
                 </div>
                 <div className="absolute right-0  top-60 sm:right-0 sm:top-48 md:right-28 md:top-52 lg:-right-4 lg:top-52">
