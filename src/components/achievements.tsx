@@ -100,10 +100,7 @@ const Achievements = () => {
                             <Image
                               width={400}
                               height={300}
-                              // src={testimonial.image}
-                              src={
-                                testimonial.image
-                              }
+                              src={testimonial.image}
                               alt={`${testimonial.title}'s portrait`}
                               className=" h-full w-full flex-1 rounded-md object-cover object-center"
                             />
