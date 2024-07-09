@@ -44,7 +44,7 @@ const Navbar = () => {
       </style>
       <nav
         className={`fixed top-0 z-50 w-[100vw] h-20 flex justify-center items-center rounded  ${
-          scrolling &&!isOpen? "backdrop-blur-xl " : ""
+          scrolling &&!isOpen? "bg-white " : ""
         
         } ${isOpen == true ? "dark:bg-black bg-white " : ""} ${pathname=="/enquiry"?"bg-bgcust":"bg-transparent"}`}
         id="navbar"
@@ -59,7 +59,7 @@ const Navbar = () => {
             >
               <Link href={"/"}>
                 
-                  <img src="https://s3-alpha-sig.figma.com/img/3a45/7a59/a344c7df92387190a0c3dac850d8e0c2?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D~xgCoLmZCbrSBV~D2fK4xSuSjFLztGUdOrg~8PXzN0q9adE8iE5XN3KYA55ke9EX0V22USdJHuHwbzrQmYE5iDdfXuNZhnrkX-cMnEkpqVcDIXjP3UgyxYo-vgn6pOq3x8DJ93XIMvwOXJMqoaFWqviZyjpzy4n50DC2ijoPwDFx2Uj754-SvQ-u0LcrqXpBniJahW9cqRlaednohsujm9vrYQq2Cex7bC72gJhMigdFMU5bXOuMLaLg0C3Y5B~2-Dbkv~DzqATYV~8P-b7Oj0-iscFH3fJpP9iBqbu20FXv5xND3NrLxW1hzpIUdIZKeMLFsIHz-FVZqMqUnm0cA__" alt="" className="lg:w-16 lg:h-16 md:w-16 md:h-16 w-14 h-14 lg:h-16 lg:w-16 object-fit lg:mx-16  md:mx-4 mx-2" />
+                  <img src="https://s3-alpha-sig.figma.com/img/3a45/7a59/a344c7df92387190a0c3dac850d8e0c2?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OQDE3h0shDEnSBu76c1I2N1-UqplFunfty-AfrN6KabvEQZve9OpItbXyAe4esBHQ8KWVwZjfQKNTFPpBZ6av6Vk0Y7yWRRY~SU6ixGWh3DPACGTI6xE1wO3a-hY0Z0O9rD10iLlp4izXM9OR6ZyKL4uKuDk~Jbkg3uaaW0rFdzFGZcENc17tI5y50La~md9~JrFMUXFYIk0j3oB6rsCNPu9bxK2tQf7b~xVbiiiN3W4jnkZUS-pI0ut9bKNVtIF7Si9gGo3S1rN8Xq2blHsb7HF1iNxG2gDqANosap0QwUigF3UTTo61ETXqEDv0YQBOFXqtSqSeBsmJawwdxdw~A__" alt="" className="lg:w-14 lg:h-14 md:w-14 md:h-14 w-14 h-14 lg:h-16 lg:w-16 object-fit lg:mx-16  md:mx-4 mx-2" />
               
               </Link>
 
