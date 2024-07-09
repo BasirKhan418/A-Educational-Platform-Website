@@ -102,6 +102,7 @@ const Hero = () => {
               >
                 <div
                   className="relative flex items-end rounded-3xl bg-bgcust"
+                  className="relative flex items-end rounded-3xl bg-bgcust "
                   style={{
                     height: "418px",
                     width: "321px",
@@ -131,6 +132,8 @@ const Hero = () => {
                     alt=""
                     className="mt-10 h-[349px] w-[280px] object-cover z-20"
                     style={{ borderRadius: "0px 0px 51px 0px" }}
+                    className="mt-10 h-[309px] w-[240px] object-cover"
+
                   />
                 </div>
                 <div className="absolute right-0 top-60 sm:right-0 sm:top-48 md:right-28 md:top-52 lg:-right-4 lg:top-64 z-10">
