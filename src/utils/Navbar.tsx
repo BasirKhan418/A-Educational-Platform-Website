@@ -164,7 +164,7 @@ const Navbar = () => {
                     )}
                   </motion.li>
                   </Link>
-                  <Link href="/#about">
+                  <Link href="/about">
                   <motion.li
                   className={` list-none px-3 py-2 mx-3 mt-2  transition-colors duration-300 transform rounded-md lg:mt-0 ${pathname=="/enquiry"?"text-white":"text-primary"}
                     text-lg lg:text-base md:text-base sm:text-lg  ${data6?"inter-bold text-black":"roboto-medium text-gray-500 font-semibold"} text-gray-800`}
