@@ -4,14 +4,14 @@ const Blog = () => {
   return (
     <section className="py-12">
       <div className=" flex justify-center items-center flex-col px-4">
-        <h2 className="text-3xl font-semibold text-center text-bgcust inter-bold mb-4">Helpful Blogs</h2>
-        <p className="text-center text-black  inter-bold text-4xl lg:w-[768px] mb-4">
+        <h2 className="text-3xl font-bold text-center text-bgcust inter-bold mb-4">Helpful Blogs</h2>
+        <p className="text-center text-black  inter-medium text-4xl lg:w-[768px] mb-4">
         Articles will help to to stay up to date with all the knowledge
         </p>
-        <p className='inter-medium text-sm lg:w-[572px] text-black mb-6 text-center'>
+        <p className='inter-medium text-xl lg:w-[690px] text-black mb-6 text-center'>
         Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-8 md:grid-cols-2 gap-4">
           {Array(6).fill().map((_, i) => (
             <div key={i} className="bg-white  overflow-hidden lg:h-[495px] lg:w-[376px] md:h-[495px] md:w-[376px] h-[450px] w-[300px]">
               <img
@@ -20,7 +20,7 @@ const Blog = () => {
                 className="w-full h-[253px] object-cover rounded-lg"
               />
               <div className="py-4">
-                <h3 className="text-xl font-semibold mb-2 poppins-bold">Why Java is best programming language?</h3>
+                <h3 className="text-xl font-extrabold mb-2 poppins-bold">Why Java is best programming language?</h3>
                 <p className="text-gray-600 mb-4 inter-medium text-sm">
                   Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts ...
                 </p>

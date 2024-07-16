@@ -49,7 +49,7 @@ const FAQ: React.FC = () => {
       </h2>
       <div className="h-1 bg-bgcust rounded w-40 mb-4"></div>
       {faqs.map((faq, index) => (
-        <div key={index} className="mb-4 shadow">
+        <div key={index} className="mb-8 shadow">
           <button
             onClick={() => toggle(index)}
             className="w-full text-left flex justify-start items-center py-4 px-2 bg-white rounded-lg focus:outline-none"

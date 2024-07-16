@@ -102,7 +102,6 @@ const Hero = () => {
               >
                 <div
                   className="relative flex items-end rounded-3xl bg-bgcust"
-                  className="relative flex items-end rounded-3xl bg-bgcust "
                   style={{
                     height: "418px",
                     width: "321px",
@@ -135,10 +134,17 @@ const Hero = () => {
                   />
                 </div>
                 <div className="absolute right-0 top-60 sm:right-0 sm:top-48 md:right-28 md:top-52 lg:-right-4 lg:top-64 z-10">
-                  <img
+                  {/* <img
                     src="/herosvg.svg"
                     alt=""
                     className="h-40 object-cover md:h-80"
+                  /> */}
+                  <Image 
+                    src="/herosvg.svg"
+                    alt=""
+                    height={80}
+                    width={80}
+                    className="md:h-80"
                   />
                 </div>
               </motion.div>

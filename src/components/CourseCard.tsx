@@ -1,5 +1,6 @@
 import React from 'react';
 import { Clock, CirclePlay , Users, Star } from 'lucide-react';
+import Image from 'next/image';
 
 interface CourseCardProps {
   title: string;
@@ -13,7 +14,14 @@ interface CourseCardProps {
 const CourseCard: React.FC<CourseCardProps> = ({ title, duration, videos, students, rating, image }) => {
   return (
     <div className="h-[418px] w-[376px] overflow-hidden  bg-white rounded-lg  relative m-2">
-      <img className="w-full h-[236px] object-cover rounded-lg " src={image} alt={title} />
+      {/* <img className="w-full h-[236px] object-cover rounded-lg " src={image} alt={title} /> */}
+      <Image
+        src={image}
+        alt={title}
+        layout="fill"
+        objectFit="cover"
+        className="rounded-t-lg"
+      />
       <div className="flex items-center justify-end absolute right-2 top-56 backdrop-blur-xl rounded-full w-[61px] h-[25px]" style={{background: "rgba(93, 93, 93, 1)"
 }}>
           <div className='mr-2 flex justify-center items-center'>

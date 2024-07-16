@@ -13,10 +13,10 @@ const JoinUsSection = () => {
             Install our top-rated dropshipping app to your e-commerce site and get access to US Suppliers, AliExpress vendors, and the best dropshipping and custom products.
           </p>
           <div className="flex justify-center space-x-4 flex-wrap my-2">
-            <Button className='rounded-full my-2'>
-               Start Free Trial &rarr;
+            <Button className='rounded-full font-medium my-2'>
+               Book a demo &rarr;
             </Button>
-            <Button variant={"outline"} className='rounded-full my-2' >
+            <Button variant={"outline"} className='rounded-full my-2 font-medium' >
               Contact Us &rarr;
             </Button>
           </div>

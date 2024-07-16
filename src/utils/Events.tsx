@@ -66,7 +66,7 @@ const Events = () => {
           </div>
         ))}
       </div>
-      <div className="flex lg:justify-between md:justify-between xl:justify-between justify-center mt-8 items-center">
+      <div className="flex lg:justify-between md:justify-between xl:justify-between justify-center mt-16 items-center">
         <a href="#" className="text-bgcust inter-bold mx-2 text-2xl hidden lg:block md:block md:text-xl">View All Courses</a>
         <div className='h-[2px] bg-gray-600 w-[54vw] hidden lg:block md:block md:text-xl mx-3'></div>
         <button  className="text-bgcust inter-medium mx-2 text-sm border-2 p-4 rounded-full border-bgcust lg:mr-10 md:mr-10 w-full md:w-36 lg:w-36">All Courses <span>&rarr;</span></button>

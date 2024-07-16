@@ -64,7 +64,7 @@ const courses: Course[] = [
 
 const Course: React.FC = () => {
   return (
-    <section id="course" className='section-width space-y-4 poppins-bold my-28'>
+    <section id="course" className='section-width space-y-4 poppins-bold my-32'>
       <div className='mb-20'>
      <Title title="Popular courses " className='mx-2' />
      </div>
@@ -76,7 +76,7 @@ const Course: React.FC = () => {
       
      
     </div>
-    <div className='flex justify-center items-center '>
+    <div className='flex justify-center items-center'>
     <div className="flex lg:justify-between md:justify-between xl:justify-between justify-center items-center relative">
         <a href="#" className="text-bgcust inter-bold mx-2 text-2xl hidden lg:block md:block md:text-xl">View All Courses</a>
         <div className='hidden lg:block md:block'>

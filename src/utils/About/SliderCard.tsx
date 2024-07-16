@@ -78,3 +78,4 @@ const SliderCard = () => {
 };
 
 export default SliderCard;
+
