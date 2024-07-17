@@ -1,16 +1,18 @@
 import React from "react";
 import VectorImage from "./VectorImage";
 import FelicitationContent from "./Content";
-import Im1 from "../../../public/event/grid1/im1.png";
-import Im2 from "../../../public/event/grid1/im2.png";
-import Im3 from "../../../public/event/grid1/im3.png";
-import Im4 from "../../../public/event/grid1/im4.png";
-import Im5 from "../../../public/event/grid1/im5.png";
-import Im6 from "../../../public/event/grid1/im6.png";
-import Image from "next/image";
+import FalicitationImage from "./FalicitationImage";
+import ChildrenImage from "./ChildrenImage";
+import GarbaImage from "./GarbaImage";
+import FarewellImage from "./FarewellImage";
+import PicnicImage from "./PicnicImage";
 
 const EventPage = () => {
-  const vectorImagePath = "/event/Felicitation.png";
+  const felicitationImagePath = "/event/Felicitation.png";
+  const childrenImagePath = "/event/Children.png";
+  const garbaImagePath = "/event/Garba.png";
+  const farewellImagePath = "/event/Farewell.png";
+  const picnicImagePath = "/event/Picnic.png";
   const felicitationContent = {
     title: "Felicitation",
     imagePath: "/event/Frame.png",
@@ -18,6 +20,33 @@ const EventPage = () => {
       the outstanding achievements of our students. Our annual
       Felicitation Ceremony is a prestigious event where we honor academic
       excellence, personal growth, and exceptional talents.`,
+  };
+  const childrenContent = {
+    title: "Children's Day",
+    imagePath: "/event/Frame.png",
+    description: `At Gour's Educare Plus, we believe every child is special. 
+    Our Children's Day celebration is a vibrant testament to the spirit of childhood 
+    and the potential of our young learners. This day is dedicated to fostering happiness, 
+    creativity, and a sense of belonging among our students.`,
+  };
+  const garbaContent = {
+    title: "Garba Night",
+    imagePath: "/event/Frame.png",
+    description: `Experience the vibrant spirit of Gujarat at Gour's Educare 
+    Plus's annual Garba Night! This dazzling event brings together students, 
+    parents, and staff for an evening of traditional dance, music, and festivities.`,
+  };
+  const Farewell = {
+    title: "Farewell",
+    imagePath: "/event/Frame.png",
+    description: `At Gour's Educare Plus, our annual Farewell ceremony is a heartfelt tribute 
+    to our graduating students. This event marks the culmination of their journey with us and the exciting start of their next chapter.`,
+  };
+  const Picnic = {
+    title: "Picnic",
+    imagePath: "/event/Frame.png",
+    description: `Gour's Educare Plus believes in the power of experiential learning. Our annual school 
+    picnic is a day filled with excitement, exploration, and strengthening friendships outside the classroom environment.`,
   };
 
   return (
@@ -28,55 +57,51 @@ const EventPage = () => {
         </h2>
       </div>
       <div className="relative flex w-full flex-col justify-center lg:flex-row">
-        <VectorImage imagePath={vectorImagePath} />
+        <VectorImage imagePath={felicitationImagePath} />
         <FelicitationContent
           title={felicitationContent.title}
           imagePath={felicitationContent.imagePath}
           description={felicitationContent.description}
         />
       </div>
-      <div className="container mx-auto mb-8 p-4 lg:mb-24">
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-3 lg:relative">
-          <div className="col-span-1 md:col-span-1">
-            <Image src={Im1} alt="Trophy" className="rounded-lg object-cover" />
-          </div>
-          <div className="col-span-1 md:col-span-2">
-            <Image src={Im2} alt="Stage" className="rounded-lg object-cover" />
-          </div>
-          <div className="left-[34%] top-[33.5%] col-span-1 md:col-span-1 lg:absolute">
-            <Image
-              src={Im3}
-              alt="Students"
-              className="rounded-lg object-cover"
-              height={450}
-              width={450}
-            />
-          </div>
-          <div className="col-span-1 md:col-span-1">
-            <Image
-              src={Im5}
-              alt="Students"
-              className="rounded-lg object-cover"
-            />
-          </div>
-          <div className="col-span-1 md:col-span-1">
-            <Image
-              src={Im6}
-              alt="Students"
-              className="rounded-lg object-cover"
-            />
-          </div>
-          <div className="right-0 top-[33%] col-span-1 md:col-span-1 lg:absolute">
-            <Image
-              src={Im4}
-              alt="Students"
-              className="rounded-lg object-cover"
-              height={440}
-              width={440}
-            />
-          </div>
-        </div>
+      <FalicitationImage />
+      <div className="relative flex w-full flex-col justify-center lg:flex-row">
+        <VectorImage imagePath={childrenImagePath} />
+        <FelicitationContent
+          title={childrenContent.title}
+          imagePath={childrenContent.imagePath}
+          description={childrenContent.description}
+        />
       </div>
+      <ChildrenImage />
+      <div className="relative flex w-full flex-col justify-center lg:flex-row">
+        <VectorImage imagePath={garbaImagePath} />
+        <FelicitationContent
+          title={garbaContent.title}
+          imagePath={garbaContent.imagePath}
+          description={garbaContent.description}
+        />
+      </div>
+      <GarbaImage />
+      <div className="relative flex w-full flex-col justify-center lg:flex-row">
+        <VectorImage imagePath={farewellImagePath} />
+        <FelicitationContent
+          title={Farewell.title}
+          imagePath={Farewell.imagePath}
+          description={Farewell.description}
+        />
+      </div>
+      <FarewellImage />
+      <div className="relative flex w-full flex-col justify-center lg:flex-row">
+        <VectorImage imagePath={picnicImagePath} />
+        <FelicitationContent
+          title={Picnic.title}
+          imagePath={Picnic.imagePath}
+          description={Picnic.description}
+        />
+      </div>
+      <PicnicImage />
+      
     </div>
   );
 };
