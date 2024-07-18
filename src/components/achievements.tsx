@@ -80,7 +80,7 @@ const Achievements = () => {
           <Title title="Achievements" className=" text-2xl inline" />
 
           <div className="flex flex-col items-start space-y-8 md:flex-row md:justify-between md:space-x-8 md:space-y-0">
-            <div className="flex min-h-[40vh] flex-1 flex-col justify-center md:max-w-md my-20">
+            <div className="flex min-h-[40vh] flex-1 flex-col justify-center md:max-w-md lg:my-20 my-0">
               <h3 className="mb-4 text-2xl font-semibold md:text-4xl poppins-bold lg:m-0 md:m-0 m-2">
               Milestones Reached in Our Educare.
               </h3>
@@ -90,7 +90,7 @@ const Achievements = () => {
             </div>
 
             <div className="lg:w-[663px] w-full poppins-medium ">
-              <Carousel className=" max-md:max-w-md lg:my-20 ">
+              <Carousel className=" max-md:max-w-md lg:my-20 my-0">
                 <CarouselContent>
                   {testimonials.map((testimonial, index) => (
                     <CarouselItem key={index}>
