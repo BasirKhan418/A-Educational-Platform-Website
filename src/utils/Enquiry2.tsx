@@ -86,18 +86,17 @@ const Enquiry2 = () => {
         </div>
       </div>
       <div className="z-50 flex min-h-screen items-center justify-center ">
-        <div className="w-full max-w-6xl rounded-lg  bg-gradient-to-b from-[#02B3E4] to-[#0790B6] p-6 shadow-xl md:absolute md:top-52 lg:absolute lg:top-52">
+        <div className="w-full max-w-6xl rounded-lg shadow-xl md:absolute md:top-52 lg:absolute lg:top-52">
+          <div className="grid bg-white grid-cols-1 gap-6 md:grid-cols-2">
 
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 px-5">
             {/* LEFT CONTACT SIDE */}
-
-            <div className="flex flex-col justify-between rounded-lg p-6 text-white">
-              <div className="flex items-center gap-4 relative">
+            <div className="flex flex-col justify-between rounded-lg bg-gradient-to-b from-[#02B3E4] to-[#0790B6] p-6 text-white md:p-16">
+              <div className="flex items-center gap-4">
                 <button
                   onClick={handleBackClick}
-                  className="flex absolute -left-10 h-8 w-8 items-center justify-center rounded-full bg-white text-black"
+                  className="absolute left-4 top-4 flex h-8 w-8 items-center justify-center rounded-full text-black"
                 >
-                  <ArrowLeft className="h-6 w-6 rounded-full" />
+                  <ArrowLeft className="h-6 w-6 rounded-full text-white" />
                 </button>
                 <div className="flex flex-col justify-center">
                   <h2 className="poppins-bold mb-2 text-4xl font-bold lg:text-5xl">
@@ -119,11 +118,11 @@ const Enquiry2 = () => {
                   Nagpur - 10
                 </p>
               </div>
-              <div className="relative mb-2 flex items-center">
-                <PhoneCall className="absolute -left-10 top-0 h-6 w-8" />
+              <div className="relative flex items-center">
+                <PhoneCall className="absolute -left-10 top-1/2 h-6 w-8 -translate-y-1/2" />
                 <div className="flex flex-col">
                   <p className="text-lg text-gray-200">Call:</p>
-                  <p className="poppins-medium text-sm">
+                  <p className="poppins-medium text-md">
                     9881244063 || 9970320890
                   </p>
                 </div>
@@ -145,6 +144,7 @@ const Enquiry2 = () => {
                     id="studentName"
                     value={formData.studentName}
                     onChange={handleChange}
+                    placeholder="Enter student name"
                     className={`focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none ${errors.studentName ? "border-red-500" : ""}`}
                   />
                   {errors.studentName && (
@@ -169,7 +169,7 @@ const Enquiry2 = () => {
                   />
                   {errors.std && (
                     <p className="text-xs italic text-red-500">
-                      Please enter the standard.
+                      Select a standard
                     </p>
                   )}
                 </div>
@@ -309,8 +309,6 @@ const Enquiry2 = () => {
                 </div>
               </form>
             </div>
-            
-            
           </div>
         </div>
       </div>
