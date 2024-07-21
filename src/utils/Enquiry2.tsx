@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import { MapPin, PhoneCall } from "lucide-react";
+import { ArrowLeft, MapPin, PhoneCall } from "lucide-react";
 
 const Enquiry2 = () => {
   const router = useRouter();
@@ -71,33 +71,34 @@ const Enquiry2 = () => {
         style={{ backgroundColor: "rgba(2, 179, 228, 0.17)" }}
       >
         <div className="absolute left-2 top-10">
-          <img
+          {/* <img
             src="https://s3-alpha-sig.figma.com/img/a882/5901/1ad79801565535bce92321fc3543c61a?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Dw5fSehbWB4s03pzABNmKt-vQ~Y3fEF1sE1vY0qjvTXNro1H8NXP288pmbkh1DugTaRlN1iEt3N5Wggn2LAo~MLAZnykOCs9AWVZNmIncdde5VYAjacDrk~Egvi-4pZPSz4S0LcABmi3q5kK1YNrGwdQRhpLXf041I4DZbLaIoZTzfXtux8V5EW8Mp2C7et5wgmJ41yIvqWEqfJdwXVPzYvwpev-eNIJw6nyI4B~QAKHjeg9UyYdoSeBog21Kqa6EzDvC3fJeXJWS1itsojR~G2VC1~zyFwUMj5gRAwcDnPXVQoer5cqwKwCS-NA-qaGs6rjC5AO-PXCbBkC~Brydw__"
             alt=""
             className="h-[161px] w-[161px] rounded-full"
-          />
+          /> */}
         </div>
 
         <div className="mt-20">
-          <h1 className="poppins-bold pt-10 text-center text-4xl text-bgcust">
+          <h1 className="poppins-bold text-bgcust pt-10 text-center text-4xl">
             Get In Touch
           </h1>
-          <div className="w-42 mt-4 h-[2px] bg-bgcust lg:w-[600px]"></div>
+          <div className="w-42 bg-bgcust mt-4 h-[2px] lg:w-[600px]"></div>
         </div>
       </div>
-      <div className="z-50 flex min-h-screen items-center justify-center bg-white">
-        <div className="w-full max-w-6xl rounded-lg bg-bgcust p-6 shadow-xl md:absolute md:top-52 lg:absolute lg:top-52">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-            <div className="flex flex-col justify-between rounded-lg bg-bgcust p-6 text-white">
-              <div className="flex gap-4">
-                <div className="rounded-full bg-white px-4 py-2 text-black flex justify-center items-center">
-                  <button
-                    onClick={handleBackClick}
-                    className="font-extrabold"
-                  >
-                    ←
-                  </button>
-                </div>
+      <div className="z-50 flex min-h-screen items-center justify-center ">
+        <div className="w-full max-w-6xl rounded-lg  bg-gradient-to-b from-[#02B3E4] to-[#0790B6] p-6 shadow-xl md:absolute md:top-52 lg:absolute lg:top-52">
+
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 px-5">
+            {/* LEFT CONTACT SIDE */}
+
+            <div className="flex flex-col justify-between rounded-lg p-6 text-white">
+              <div className="flex items-center gap-4 relative">
+                <button
+                  onClick={handleBackClick}
+                  className="flex absolute -left-10 h-8 w-8 items-center justify-center rounded-full bg-white text-black"
+                >
+                  <ArrowLeft className="h-6 w-6 rounded-full" />
+                </button>
                 <div className="flex flex-col justify-center">
                   <h2 className="poppins-bold mb-2 text-4xl font-bold lg:text-5xl">
                     Contact us
@@ -110,16 +111,16 @@ const Enquiry2 = () => {
                   Corporate Office:
                 </p>
                 <p className="poppins-bold text-3xl font-semibold">
-                  Gour's Educare Plus
+                  Gour&apos;s Educare Plus
                 </p>
-                <p className="my-2 mb-2 flex w-[282px]">
-                  <MapPin className="mx-2 w-10" />
+                <p className="relative my-2 mb-2 flex w-[282px]">
+                  <MapPin className="absolute -left-10 top-0 w-10" />
                   Near Pink Girls Hostel, Behind KRIMS Hospital, Ramdaspeth,
                   Nagpur - 10
                 </p>
               </div>
-              <div className="mb-2 flex items-center">
-                <PhoneCall className="mx-2 h-6 w-8" />
+              <div className="relative mb-2 flex items-center">
+                <PhoneCall className="absolute -left-10 top-0 h-6 w-8" />
                 <div className="flex flex-col">
                   <p className="text-lg text-gray-200">Call:</p>
                   <p className="poppins-medium text-sm">
@@ -128,6 +129,8 @@ const Enquiry2 = () => {
                 </div>
               </div>
             </div>
+
+            {/* RIGHT CONTACT SIDE */}
             <div className="poppins-medium rounded-lg bg-white p-6">
               <form onSubmit={handleSubmit}>
                 <div className="mb-4">
@@ -146,7 +149,7 @@ const Enquiry2 = () => {
                   />
                   {errors.studentName && (
                     <p className="text-xs italic text-red-500">
-                      Please enter the student's name.
+                      Please enter the student&apos;s name.
                     </p>
                   )}
                 </div>
@@ -291,7 +294,7 @@ const Enquiry2 = () => {
                 <div className="mb-4 flex h-full items-center">
                   <button
                     type="submit"
-                    className="focus:shadow-outline rounded bg-bgcust px-4 py-2 font-bold text-white focus:outline-none"
+                    className="focus:shadow-outline bg-bgcust rounded px-4 py-2 font-bold text-white focus:outline-none"
                   >
                     Continue
                   </button>
@@ -306,6 +309,8 @@ const Enquiry2 = () => {
                 </div>
               </form>
             </div>
+            
+            
           </div>
         </div>
       </div>

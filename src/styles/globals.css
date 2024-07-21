@@ -10,6 +10,8 @@
     --background: 0 0% 100%;
     --foreground: 222.2 47.4% 11.2%;
 
+    --bgcust: 193 98% 45%;
+
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
@@ -98,6 +100,10 @@
   .section-width {
     @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
   } 
+
+  .blue-gradient {
+    background: linear-gradient(to bottom, #02B3E4, #0790B6);
+  }
 }
 
 @media (max-width: 640px) {
@@ -169,4 +175,13 @@
 }
 html {
   scroll-behavior: smooth;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
