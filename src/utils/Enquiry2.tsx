@@ -79,27 +79,28 @@ const Enquiry2 = () => {
         </div>
 
         <div className="mt-20">
-          <h1 className="poppins-bold text-bgcust pt-10 text-center text-4xl">
+          <h1 className="poppins-bold pt-10 text-center text-4xl text-bgcust">
             Get In Touch
           </h1>
-          <div className="w-42 bg-bgcust mt-4 h-[2px] lg:w-[600px]"></div>
+          <div className="w-42 mt-4 h-[2px] bg-bgcust lg:w-[600px]"></div>
         </div>
       </div>
       <div className="z-50 flex min-h-screen items-center justify-center ">
         <div className="w-full max-w-6xl rounded-lg  bg-gradient-to-b from-[#02B3E4] to-[#0790B6] p-6 shadow-xl md:absolute md:top-52 lg:absolute lg:top-52">
-
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 px-5">
+          <div className="grid grid-cols-1 gap-6 px-5 md:grid-cols-2">
             {/* LEFT CONTACT SIDE */}
 
             <div className="flex flex-col justify-between rounded-lg p-6 text-white">
-              <div className="flex items-center gap-4 relative">
-                <button
-                  onClick={handleBackClick}
-                  className="flex absolute -left-10 h-8 w-8 items-center justify-center rounded-full bg-white text-black"
-                >
-                  <ArrowLeft className="h-6 w-6 rounded-full" />
-                </button>
-                <div className="flex flex-col justify-center">
+              <div className="relative flex flex-col items-center gap-16">
+                <div>
+                  <button
+                    onClick={handleBackClick}
+                    className="absolute -left-10 flex h-8 w-8 items-center justify-center text-white"
+                  >
+                    <ArrowLeft className="" />
+                  </button>
+                </div>
+                <div className="flex flex-col justify-start self-start">
                   <h2 className="poppins-bold mb-2 text-4xl font-bold lg:text-5xl">
                     Contact us
                   </h2>
@@ -294,7 +295,7 @@ const Enquiry2 = () => {
                 <div className="mb-4 flex h-full items-center">
                   <button
                     type="submit"
-                    className="focus:shadow-outline bg-bgcust rounded px-4 py-2 font-bold text-white focus:outline-none"
+                    className="focus:shadow-outline rounded bg-bgcust px-4 py-2 font-bold text-white focus:outline-none"
                   >
                     Continue
                   </button>
@@ -309,8 +310,6 @@ const Enquiry2 = () => {
                 </div>
               </form>
             </div>
-            
-            
           </div>
         </div>
       </div>

@@ -50,7 +50,7 @@ const EventPage = () => {
   };
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-12">
+    <div className="section-width flex min-h-screen flex-col items-center justify-center gap-12">
       <div className="my-24 flex flex-col items-center justify-center bg-white p-4 md:flex-row">
         <h2 className="inter-bold text-center text-5xl font-bold text-bgcust">
           Our Events
@@ -101,7 +101,6 @@ const EventPage = () => {
         />
       </div>
       <PicnicImage />
-      
     </div>
   );
 };

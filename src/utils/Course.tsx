@@ -18,7 +18,7 @@ const courses: Course[] = [
     videos: 20,
     students: 1900,
     rating: 4.9,
-    image: "https://s3-alpha-sig.figma.com/img/6e39/35ad/c921c8b56030da788ab8c46dd2f36cf4?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OFemsjrU4JxMpBYm~8R3j5Gz9eo4Cam1qN9zgltYAh8cU4LdZdZBf5sVDkSpg~H3d5jto4e0pfesQTXgLIjbr6V5JVJ~aMN4~jr0eKWN1cC78s9mOOpG-Pda3FjmmaWLJXT9qbtCWp8EB3MSnAEHBVm936rFXYhqayXusfbfDXKtIhJgyw4k2PagY2a0S37nULMBd-OsdEqOAhWq657FKp-FAL6V6KvfwqcREh7P96p2ppbg4a8k~bcCSBhXzpmTU5mIE3rufxujKGQ0~nhkY8W48tCY8TYtS5k-ygRj8ksw8w5X9EIUxNarskwlRDsPhyS0vFEzQ4AQTW0w7lNjuw__",
+    image: "/hero/courses/crash.png",
   },
   {
     title: "Digital Marketing 101",
@@ -26,7 +26,7 @@ const courses: Course[] = [
     videos: 32,
     students: 930,
     rating: 4.9,
-    image: "https://s3-alpha-sig.figma.com/img/0837/bd31/c99c42327cb76d68552398bf05be387b?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F~paxJUZIzLEw-f4Vq4OTW6wkUVlrGzPTnsT99UwSsCAuMUIPhO4VdeWNdzk1S00xpJLvX9Wqo~pAHuXmzRfPYBixwYV-Sp5Ga~MK13W7qe2a9KSXYJf7ErTuynFCW~QGNAsh6rCXYtIVWDi2YCFgwxWB~5mwoSaMJMYqvARjJEzy~heM7AJDTVG5UTZJkjNdMcQs7sG0CQpC~oc4bj4EHLS54o2lVCBSOGuPF0n0abVJa5unAtWYw5Kuh~L3narttyheJ8KG7~Ur~eN2zjBooPLfw33GFT-hRA1~5Bei2tCrWawnxeBtpy0BkYI6RXeGSTRMCp8DUbrGcgQtFulXg__",
+    image: "/hero/courses/test.png",
   },
   {
     title: "Data Science Dasar",
@@ -34,7 +34,7 @@ const courses: Course[] = [
     videos: 46,
     students: 1043,
     rating: 4.9,
-    image: "https://s3-alpha-sig.figma.com/img/7a5f/28c7/f57b8bf59e8e11935f1a8dca1817e371?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Yxq6oYO6nOzhNIyvsprBa3SV-PLABsohusYXboUmbdVMSG~UcN~qiVns1Qud8JvFFjCTxkMXa3eVHYRvrPts06HTrVIP3O3Ec~KbZWf9wOu0laNf21OiijmrLN2VIQews2xioV-Cvd69fLKfsdi90n3HWpssVXAfa2ZdBTyNvmxioeRMieEWNfjxflc9iQdeCQZl8Mz4KMtWZwja43ppDxp4fWbEfVIWjA9aoJr4k7wZJ51ki4g0o9adZ2SMOfbFNtV5yTi-V9aAnQ1lLPzTN6k3Z~v7hWXDxdc0JRqmVbcWeH8YIqzRwwxxlPfUZzA~BZVg8wWgMTqDIShfZmht-A__",
+    image: "/hero/courses/pip.png",
   },
   {
     title: "Dasar Pemrograman WEB",
@@ -42,7 +42,7 @@ const courses: Course[] = [
     videos: 20,
     students: 1900,
     rating: 4.9,
-    image: "https://s3-alpha-sig.figma.com/img/6e39/35ad/c921c8b56030da788ab8c46dd2f36cf4?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OFemsjrU4JxMpBYm~8R3j5Gz9eo4Cam1qN9zgltYAh8cU4LdZdZBf5sVDkSpg~H3d5jto4e0pfesQTXgLIjbr6V5JVJ~aMN4~jr0eKWN1cC78s9mOOpG-Pda3FjmmaWLJXT9qbtCWp8EB3MSnAEHBVm936rFXYhqayXusfbfDXKtIhJgyw4k2PagY2a0S37nULMBd-OsdEqOAhWq657FKp-FAL6V6KvfwqcREh7P96p2ppbg4a8k~bcCSBhXzpmTU5mIE3rufxujKGQ0~nhkY8W48tCY8TYtS5k-ygRj8ksw8w5X9EIUxNarskwlRDsPhyS0vFEzQ4AQTW0w7lNjuw__",
+    image: "/hero/courses/summer.png",
   },
   {
     title: "Digital Marketing 101",
@@ -50,7 +50,7 @@ const courses: Course[] = [
     videos: 32,
     students: 930,
     rating: 4.9,
-    image: "https://s3-alpha-sig.figma.com/img/0837/bd31/c99c42327cb76d68552398bf05be387b?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F~paxJUZIzLEw-f4Vq4OTW6wkUVlrGzPTnsT99UwSsCAuMUIPhO4VdeWNdzk1S00xpJLvX9Wqo~pAHuXmzRfPYBixwYV-Sp5Ga~MK13W7qe2a9KSXYJf7ErTuynFCW~QGNAsh6rCXYtIVWDi2YCFgwxWB~5mwoSaMJMYqvARjJEzy~heM7AJDTVG5UTZJkjNdMcQs7sG0CQpC~oc4bj4EHLS54o2lVCBSOGuPF0n0abVJa5unAtWYw5Kuh~L3narttyheJ8KG7~Ur~eN2zjBooPLfw33GFT-hRA1~5Bei2tCrWawnxeBtpy0BkYI6RXeGSTRMCp8DUbrGcgQtFulXg__",
+    image: "/hero/courses/basic.png",
   },
   {
     title: "Data Science Dasar",
@@ -58,7 +58,7 @@ const courses: Course[] = [
     videos: 46,
     students: 1043,
     rating: 4.9,
-    image: "https://s3-alpha-sig.figma.com/img/7a5f/28c7/f57b8bf59e8e11935f1a8dca1817e371?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Yxq6oYO6nOzhNIyvsprBa3SV-PLABsohusYXboUmbdVMSG~UcN~qiVns1Qud8JvFFjCTxkMXa3eVHYRvrPts06HTrVIP3O3Ec~KbZWf9wOu0laNf21OiijmrLN2VIQews2xioV-Cvd69fLKfsdi90n3HWpssVXAfa2ZdBTyNvmxioeRMieEWNfjxflc9iQdeCQZl8Mz4KMtWZwja43ppDxp4fWbEfVIWjA9aoJr4k7wZJ51ki4g0o9adZ2SMOfbFNtV5yTi-V9aAnQ1lLPzTN6k3Z~v7hWXDxdc0JRqmVbcWeH8YIqzRwwxxlPfUZzA~BZVg8wWgMTqDIShfZmht-A__",
+    image: "/hero/courses/winter.png",
   },
 ];
 

@@ -9,43 +9,43 @@ const Events = () => {
       event: "Felicitation",
       description:
         "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
-      image: "/event/feliciation.jpeg",
+      image: "hero/events/falicitation.png",
     },
     {
       event: "Children's Day",
       description:
         "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
-      image: "/event/children.jpeg",
+      image: "hero/events/children.png",
     },
     {
       event: "Garba Night",
       description:
         "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
-      image: "/event/garba.jpeg",
+      image: "hero/events/garba.png",
     },
     {
       event: "Picnic",
       description:
         "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
-      image: "/event/picnic.jpeg",
+      image: "hero/events/picnic.png",
     },
     {
       event: "Diwali",
       description:
         "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
       image:
-        "https://s3-alpha-sig.figma.com/img/8949/7328/664c60ad2bc301a4e7b821092a5075c0?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ESsX-uV~xWZJhfBnJxLLmEHXO1CYtKWOK0Dx529Jgs~IYl2gm~~-2rwmhgD90lIEM6d5Ztr0cKj3q4ilqmgNDMaAEREqxG-Q7UhtaBajYJpBmk9pUeL5oacoMA~hc8H6vUbMLPTwQMT6himqr24JtY8YP7MxKDom0nTTOKNhn9WL1a6nVxFeBjzRZSV65ipCrhihHuwaFKrCIocl9JEHIxnpaVgALhuTY0fzxLKiBJB5NjhcvdRJzfHjAGt6xR~7vGWR99Xkw73ZMfCzrR-PvLbG1PTfkFkFXpXu09yOeSb85neDEsHNQLClAPNrGK~vxSW88cMjV7cP~TY-wmItPQ__",
+        "hero/events/diwali.png",
     },
     {
       event: "Farewell",
       description:
         "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
-      image: "/event/farewell.jpeg",
+      image: "hero/events/farewell.png",
     },
   ];
 
   return (
-    <section id="event" className="section-width poppins-bold space-y-4">
+    <section id="event" className="section-width poppins-bold space-y-4 mb-16">
       <Title title="Our Event" className="" />
       <div>
         <p className="text-md poppins-medium my-10 max-w-4xl text-gray-600">

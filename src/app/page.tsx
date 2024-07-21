@@ -17,7 +17,7 @@ import Banner from "@/utils/Banner";
 import JoinUsSection from "@/utils/Joinus";
 export default function LandingPage() {
   return (
-    <div className="overflow-y-hidden ">
+    <div className="overflow-y-hidden overflow-x-hidden ">
       <Hero />
       <About />
       <Achievements />

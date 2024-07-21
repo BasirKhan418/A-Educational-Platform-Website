@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import VisionCard from "./BatchesCard"; // Ensure the import path is correct
 
@@ -10,15 +10,17 @@ const ParentComponent: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#F6F4EE] p-32">
-      <div className="section-width flex flex-col md:flex-row gap-8 md:gap-0 justify-between items-center">
-        <h1 className="font-medium text-[#2C7488] text-5xl">What our <br /> <span className="text-[#02B3E4]">Batches</span> offer</h1>
-        <div className="flex bg-white py-2 px-4 rounded-full gap-12">
+    <div className="bg-[#F6F4EE] py-8 px-4 md:py-16 md:px-8 lg:py-24 lg:px-32">
+      <div className="section-width flex flex-col items-center justify-between gap-8 md:flex-row md:gap-0">
+        <h1 className="text-3xl font-medium text-[#2C7488] md:text-4xl lg:text-5xl">
+          What our <br /> <span className="text-[#02B3E4]">Batches</span> offer
+        </h1>
+        <div className="flex gap-4 rounded-full bg-white px-2 py-1 md:gap-8 md:px-4 md:py-2">
           {["VII", "VIII", "IX", "X"].map((batch, index) => (
             <button
               key={batch}
               onClick={() => handleBatchClick(index + 7)}
-              className={`py-2 px-4 rounded-full transition-colors duration-300 ${
+              className={`rounded-full px-4 py-2 transition-colors duration-300 ${
                 selectedBatch === index + 7
                   ? "bg-blue-500 text-white"
                   : "bg-white text-black hover:bg-blue-100"
@@ -29,7 +31,7 @@ const ParentComponent: React.FC = () => {
           ))}
         </div>
       </div>
-      <div className="section-width my-8 flex flex-col gap-4 md:flex-row">
+      <div className="section-width my-8 flex flex-col gap-4 md:flex-row lg:gap-8">
         {selectedBatch >= 7 && (
           <VisionCard
             title="Vision 1"
@@ -96,5 +98,3 @@ const ParentComponent: React.FC = () => {
 };
 
 export default ParentComponent;
-
-

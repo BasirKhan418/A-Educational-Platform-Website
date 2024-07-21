@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Circle } from '@/components/ui/circle';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
+import Building from "../../public/hero/building.png"
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -127,23 +128,18 @@ const Hero = () => {
                     height={349}
                     priority
                     width={280}
-                    src="https://s3-alpha-sig.figma.com/img/ecac/6553/71158b96468b91abfea06a320b329870?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dAuH5Yy-Ii6VjKPSYkAyjyRGca7eq6LuFBT4jvm7GEuQtrWVZY2agQOZNSCsBR9QgiOG3ChbgTPVZDkuu6~1m4WAdaBezUYLap08mpAi8EMCuHHDPIayj~tKYUspzfxCj7mi1YsvjTbSkavT7iooHzyMivPd9zoLoGB~yxrbFB1yvKXPv7L2dCxI1CAh01T3eTrpJkqsnLGdGDac4kKO8u3STr3brAb8KDNpDgjclScOpfRB4v3GHWFF25mxUZxjxBTlqQE7mq7UoCjUPaRecCHg~ousJMdvvja1Fcpav4zntz8F5F8ye2pmXclrqaPktmHx-uTchhzX~G1-7JOlOQ__"
+                    src={Building}
                     alt=""
                     className="mt-10 h-[349px] w-[280px] object-cover z-20"
                     style={{ borderRadius: "0px 0px 51px 0px" }}
                   />
                 </div>
-                <div className="absolute right-0 top-60 sm:right-0 sm:top-48 md:right-28 md:top-52 lg:-right-4 lg:top-64 z-10">
-                  {/* <img
-                    src="/herosvg.svg"
-                    alt=""
-                    className="h-40 object-cover md:h-80"
-                  /> */}
+                <div className="absolute hidden md:flex right-0 top-60 sm:right-0 sm:top-48 md:right-28 md:top-52 lg:right-[2px] lg:top-64 z-10">
                   <Image 
                     src="/herosvg.svg"
                     alt=""
-                    height={80}
-                    width={80}
+                    height={180}
+                    width={180}
                     className="md:h-80"
                   />
                 </div>

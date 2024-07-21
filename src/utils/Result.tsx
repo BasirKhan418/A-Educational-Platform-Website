@@ -38,25 +38,28 @@ const ResultData = [
 
 const Result = () => {
   return (
-    <section id="result" className="container section-width poppins-bold w-full my-20 space-y-8">
-      <Title title="Our Results" />
-      <div className="flex flex-col items-center justify-center lg:mr-24">
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 justify-center items-center mt-8 mb-8">
+    <section
+      id="result"
+      className="section-width poppins-bold flex flex-col justify-center items-center container my-20 w-full space-y-8"
+    >
+      <Title title="Our Results" className="self-start"/>
+      <div className="flex flex-col items-center justify-center">
+        <div className="mb-8 mt-8 grid grid-cols-1 items-center justify-center gap-6 md:grid-cols-2 lg:grid-cols-2">
           {ResultData.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col justify-center items-center mx-2 my-2 text-center"
+              className="mx-2 my-2 flex flex-col items-center justify-center text-center"
               style={{ borderRadius: "20px" }}
             >
               <img
                 src={item.img}
                 alt={item.name}
-                className="w-full object-cover"
+                className="w-full object-cover "
               />
             </div>
           ))}
         </div>
-        <div className="mt-8 flex items-center justify-center md:justify-between lg:justify-space xl:justify-space max-w-full">
+        <div className="lg:justify-space xl:justify-space mt-8 flex max-w-full items-center justify-center md:justify-between">
           <a
             href="#"
             className="inter-bold mx-2 hidden text-2xl text-bgcust md:block md:text-xl lg:block"

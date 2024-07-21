@@ -1,4 +1,3 @@
-// components/VisionCard.tsx
 import React from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
@@ -26,12 +25,12 @@ const VisionCard: React.FC<VisionCardProps> = ({
   testSeries,
 }) => {
   return (
-    <Card className= "flex flex-col justify-center w-full md:w-1/2 lg:w-1/3 xl:w-1/4  mx-auto my-4 p-4 bg-white shadow-md rounded-lg transform transition-transform duration-300 hover:scale-105">
+    <Card className="mx-auto my-4 flex w-full transform flex-col justify-center rounded-lg bg-white p-4 shadow-md transition-transform duration-300 hover:scale-105 md:w-3/4 lg:w-1/2 xl:w-1/3">
       <CardHeader>
         <CardTitle className="text-lg font-bold">{title}</CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
-      <hr />
+        <hr />
         <div className="flex justify-between">
           <span className="font-semibold text-gray-400">Timings</span>
         </div>
@@ -50,13 +49,13 @@ const VisionCard: React.FC<VisionCardProps> = ({
         <hr />
         <div className="flex justify-between">
           <span className="font-semibold text-gray-400">Subjects</span>
-        <div className="flex flex-col items-end space-y-1 font-semibold">
-          {subjects.map((subject, index) => (
-            <span key={index}>{subject}</span>
-          ))}
-        </div>
+          <div className="flex flex-col items-end space-y-1 font-semibold">
+            {subjects.map((subject, index) => (
+              <span key={index}>{subject}</span>
+            ))}
           </div>
-          <hr />
+        </div>
+        <hr />
         <div className="flex justify-between">
           <span className="font-semibold text-gray-400">Syllabus</span>
           <span className="font-semibold">{syllabusCompletion}</span>

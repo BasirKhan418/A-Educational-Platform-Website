@@ -22,8 +22,8 @@ const ChildrenImage = () => {
             src={Im3}
             alt="Students"
             className="rounded-lg object-cover"
-            height={450}
-            width={450}
+            height={380}
+            width={380}
           />
         </div>
         <div className="col-span-1 md:col-span-1">
@@ -37,8 +37,8 @@ const ChildrenImage = () => {
             src={Im4}
             alt="Students"
             className="rounded-lg object-cover"
-            height={440}
-            width={440}
+            height={380}
+            width={380}
           />
         </div>
       </div>
