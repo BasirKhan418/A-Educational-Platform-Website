@@ -1,12 +1,14 @@
 import React from 'react'
 import AchieveSuccess from './AchieveSuccess'
-import SliderCard from './SliderCard'
+// import SliderCard from './SliderCard'
+import Offers from './Offers'
 import FeatureCards from './FeatureCards'
+import Session from './Session'
 import Image from 'next/image'
 import Dinesh from "../../../public/about/dinesh.svg"
 const AboutPage = () => {
   return (
-    <div className='min-h-screen flex justify-center items-center flex-col'>
+    <div className='min-h-screen container max-w-[83%] flex justify-center items-center flex-col'>
       <div className="flex flex-col md:flex-row items-center justify-center p-8 bg-white my-24">
       <div className="w-full md:w-2/3 mb-8 md:mb-0 lg:w-6/12">
         <h2 className="text-5xl font-bold text-bgcust inter-bold">About us</h2>
@@ -31,11 +33,6 @@ const AboutPage = () => {
       </div>
       <div className="w-full md:w-1/3 flex flex-col items-center mt-20">
         <div className="relative">
-          {/* <img
-            src="https://s3-alpha-sig.figma.com/img/7f4a/d591/7c24839951ce5a9ba959a039d43b43be?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mWyxOph-lq-C~1lqvoQ-y4AmBOmFcPa-T3RFSu11RNxtKGct-7dIErB9RqZ74wkFjyO810uMnz8p55OUCed1TiKN~hkKtOPH1RbKjThE0Oli14hifXwVGh8s3g70ht76XbuCLITW2yi8JH0IupJjW2gOnDzTIbKAMG0TiNP38k2kmNVUGzbKv9b6h5DIsNEGydE3LTziRxTn6s-FYVtOpaInE-SOtOeCfptrqSpAfWKc~IwLg5ONUc7443aXowOsFCdmZBLVBJmf1XK6TCs7vM8CvKh-Dn~Ke5X1bta6dSy223iNETGR5OurSZ6nrhwKM3rwlC~HAELBks8eTEpaug__"
-            alt="Dinesh Gour"
-            className="w-72 h-72 object-cover rounded-lg shadow-lg border-2 border-black"
-          /> */}
           <Image
             src={Dinesh}
             alt="Dinesh Gour"
@@ -51,8 +48,10 @@ const AboutPage = () => {
     </div>
     {/* acieve success page starts from here */}
     <AchieveSuccess />
-    <SliderCard/>
+    <Session/>
+    {/* <SliderCard/> */}
     <FeatureCards/>
+    <Offers/>
     </div>
   )
 }

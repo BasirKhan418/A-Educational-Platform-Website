@@ -8,6 +8,7 @@ import Hero from "@/utils/Hero";
 import About from "@/components/about";
 import Result from "@/utils/Result";
 import Events from "@/utils/Events";
+import Batches from "@/utils/Batches"
 import Achievements from "@/components/achievements";
 import Course from "@/utils/Course";
 import Blog from "@/utils/Blog";
@@ -23,6 +24,7 @@ export default function LandingPage() {
       <Result/>  
       <JoinUsSection />
       <Events />
+      <Batches/>
       <Course/>
       <Blog/>
       <FAQ/>
