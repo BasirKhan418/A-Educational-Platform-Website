@@ -6,6 +6,12 @@ import ChildrenImage from "./ChildrenImage";
 import GarbaImage from "./GarbaImage";
 import FarewellImage from "./FarewellImage";
 import PicnicImage from "./PicnicImage";
+import One from "../../../public/event/1.png";
+import Two from "../../../public/event/2.png";
+import Three from "../../../public/event/3.png";
+import Four from "../../../public/event/4.png";
+import Five from "../../../public/event/5.png";
+import Image from "next/image";
 
 const EventPage = () => {
   const felicitationImagePath = "/event/Felicitation.png";
@@ -15,7 +21,7 @@ const EventPage = () => {
   const picnicImagePath = "/event/Picnic.png";
   const felicitationContent = {
     title: "Felicitation",
-    imagePath: "/event/Frame.png",
+    imagePath: "/event/frame.png",
     description: `At Gour's Educare Plus, we believe in recognizing and celebrating
       the outstanding achievements of our students. Our annual
       Felicitation Ceremony is a prestigious event where we honor academic
@@ -23,7 +29,7 @@ const EventPage = () => {
   };
   const childrenContent = {
     title: "Children's Day",
-    imagePath: "/event/Frame.png",
+    imagePath: "/event/frame.png",
     description: `At Gour's Educare Plus, we believe every child is special. 
     Our Children's Day celebration is a vibrant testament to the spirit of childhood 
     and the potential of our young learners. This day is dedicated to fostering happiness, 
@@ -31,20 +37,20 @@ const EventPage = () => {
   };
   const garbaContent = {
     title: "Garba Night",
-    imagePath: "/event/Frame.png",
+    imagePath: "/event/frame.png",
     description: `Experience the vibrant spirit of Gujarat at Gour's Educare 
     Plus's annual Garba Night! This dazzling event brings together students, 
     parents, and staff for an evening of traditional dance, music, and festivities.`,
   };
   const Farewell = {
     title: "Farewell",
-    imagePath: "/event/Frame.png",
+    imagePath: "/event/frame.png",
     description: `At Gour's Educare Plus, our annual Farewell ceremony is a heartfelt tribute 
     to our graduating students. This event marks the culmination of their journey with us and the exciting start of their next chapter.`,
   };
   const Picnic = {
     title: "Picnic",
-    imagePath: "/event/Frame.png",
+    imagePath: "/event/frame.png",
     description: `Gour's Educare Plus believes in the power of experiential learning. Our annual school 
     picnic is a day filled with excitement, exploration, and strengthening friendships outside the classroom environment.`,
   };
@@ -58,47 +64,88 @@ const EventPage = () => {
       </div>
       <div className="relative flex w-full flex-col justify-center lg:flex-row">
         <VectorImage imagePath={felicitationImagePath} />
-        <FelicitationContent
-          title={felicitationContent.title}
-          imagePath={felicitationContent.imagePath}
-          description={felicitationContent.description}
-        />
+        <div className="relative z-50">
+          <FelicitationContent
+            title={felicitationContent.title}
+            imagePath={felicitationContent.imagePath}
+            description={felicitationContent.description}
+          />
+          <Image
+            src={One}
+            alt="Felicitation"
+            className="hidden lg:flex absolute left-[25rem] top-10 z-0 h-40 w-40"
+            layout="intrinsic"
+          />
+        </div>
       </div>
+
       <FalicitationImage />
       <div className="relative flex w-full flex-col justify-center lg:flex-row">
         <VectorImage imagePath={childrenImagePath} />
-        <FelicitationContent
-          title={childrenContent.title}
-          imagePath={childrenContent.imagePath}
-          description={childrenContent.description}
-        />
+        <div className="relative z-50">
+          <FelicitationContent
+            title={childrenContent.title}
+            imagePath={childrenContent.imagePath}
+            description={childrenContent.description}
+          />
+          <Image
+            src={Two}
+            alt="Felicitation"
+            className="hidden lg:flex absolute left-[25rem] top-[12rem] z-0 h-40 w-40"
+            layout="intrinsic"
+          />
+        </div>
       </div>
       <ChildrenImage />
       <div className="relative flex w-full flex-col justify-center lg:flex-row">
         <VectorImage imagePath={garbaImagePath} />
-        <FelicitationContent
-          title={garbaContent.title}
-          imagePath={garbaContent.imagePath}
-          description={garbaContent.description}
-        />
+        <div className="relative z-50">
+          <FelicitationContent
+            title={garbaContent.title}
+            imagePath={garbaContent.imagePath}
+            description={garbaContent.description}
+          />
+          <Image
+            src={Three}
+            alt="Felicitation"
+            className="hidden lg:flex absolute left-[25rem] top-[12rem] z-0 h-40 w-40"
+            layout="intrinsic"
+          />
+        </div>
       </div>
       <GarbaImage />
       <div className="relative flex w-full flex-col justify-center lg:flex-row">
         <VectorImage imagePath={farewellImagePath} />
-        <FelicitationContent
-          title={Farewell.title}
-          imagePath={Farewell.imagePath}
-          description={Farewell.description}
-        />
+        <div className="relative z-50">
+          <FelicitationContent
+            title={Farewell.title}
+            imagePath={Farewell.imagePath}
+            description={Farewell.description}
+          />
+          <Image
+            src={Four}
+            alt="Felicitation"
+            className="hidden lg:flex absolute left-[25rem] top-[12rem] z-0 h-40 w-40"
+            layout="intrinsic"
+          />
+        </div>
       </div>
       <FarewellImage />
       <div className="relative flex w-full flex-col justify-center lg:flex-row">
         <VectorImage imagePath={picnicImagePath} />
+        <div className="relative z-50">
         <FelicitationContent
           title={Picnic.title}
           imagePath={Picnic.imagePath}
           description={Picnic.description}
         />
+        <Image
+            src={Five}
+            alt="Felicitation"
+            className="hidden lg:flex absolute left-[25rem] top-[12rem] z-0 h-40 w-40"
+            layout="intrinsic"
+          />
+      </div>
       </div>
       <PicnicImage />
     </div>

@@ -43,7 +43,7 @@ const Navbar = () => {
         } ${isOpen == true ? "bg-white dark:bg-black " : ""} ${pathname == "/enquiry" ? "bg-bgcust" : "bg-transparent"}`}
         id="navbar"
       >
-        <div className="container mx-auto px-6 py-4 ">
+        <div className="container max-w-navbar mx-auto px-6 py-4">
           <div className="lg:flex lg:items-center lg:justify-between">
             <motion.div
               className="flex items-center justify-between"
@@ -53,7 +53,7 @@ const Navbar = () => {
             >
               <Link href={"/"}>
                 <img
-                  src="https://s3-alpha-sig.figma.com/img/3a45/7a59/a344c7df92387190a0c3dac850d8e0c2?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OQDE3h0shDEnSBu76c1I2N1-UqplFunfty-AfrN6KabvEQZve9OpItbXyAe4esBHQ8KWVwZjfQKNTFPpBZ6av6Vk0Y7yWRRY~SU6ixGWh3DPACGTI6xE1wO3a-hY0Z0O9rD10iLlp4izXM9OR6ZyKL4uKuDk~Jbkg3uaaW0rFdzFGZcENc17tI5y50La~md9~JrFMUXFYIk0j3oB6rsCNPu9bxK2tQf7b~xVbiiiN3W4jnkZUS-pI0ut9bKNVtIF7Si9gGo3S1rN8Xq2blHsb7HF1iNxG2gDqANosap0QwUigF3UTTo61ETXqEDv0YQBOFXqtSqSeBsmJawwdxdw~A__"
+                  src="/logo.png"
                   alt=""
                   className="object-fit mx-2 h-14 w-14 md:mx-4 md:h-14 md:w-14 lg:mx-16 lg:h-14 lg:h-16  lg:w-14 lg:w-16"
                 />
