@@ -13,8 +13,8 @@ const Content: React.FC<FelicitationContentProps> = ({ title, imagePath, descrip
       <div className="flex flex-col gap-2">
         <h1 className="inter-bold text-center text-5xl font-bold">{title}</h1>
         <Image src={imagePath} alt={title} className="rounded-lg object-cover" 
-            width={400}
-            height={400}    
+            width={300}
+            height={300}    
         />
       </div>
       <p className="inter-medium w-2/3 text-start text-lg text-gray-400">

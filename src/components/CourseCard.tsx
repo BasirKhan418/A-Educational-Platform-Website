@@ -4,6 +4,7 @@ import Image from "next/image";
 
 interface CourseCardProps {
   title: string;
+  description: string;
   duration: string;
   videos: number;
   students: number;
@@ -13,6 +14,7 @@ interface CourseCardProps {
 
 const CourseCard: React.FC<CourseCardProps> = ({
   title,
+  description,
   duration,
   videos,
   students,
@@ -48,8 +50,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
           className="poppins-bold mb-4 text-sm"
           style={{ color: "rgba(68, 68, 68, 0.47)" }}
         >
-          Lorem ipsum is placeholder text commonly used in the graphic, print
-          mockups.
+          {description}
         </p>
         <div className="flex w-[343px] items-center justify-between">
           <div className="poppins-medium mb-2 flex items-center">

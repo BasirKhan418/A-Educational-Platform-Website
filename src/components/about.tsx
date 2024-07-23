@@ -23,7 +23,7 @@ const About = () => {
             </div>
             <div className="space-y-4">
               <Image
-                className="absolute max-md:top-10 right-5 max-md:opacity-50  md:bottom-0 md:left-10"
+                className="absolute max-md:top-10 right-5 max-md:opacity-50  md:top-[30rem] md:left-10"
                 src="/about/plant.svg"
                 alt="growth"
                 width={150}

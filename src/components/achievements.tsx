@@ -76,11 +76,11 @@ const Achievements = () => {
         <Title title="Achievements" className=" inline text-2xl" />
 
         <div className="flex flex-col items-start space-y-8 md:flex-row md:justify-between md:space-x-8 md:space-y-0">
-          <div className="my-0 flex min-h-[40vh] flex-1 flex-col justify-center md:max-w-md lg:my-20">
-            <h3 className="poppins-bold m-2 mb-4 text-2xl font-semibold md:m-0 md:text-4xl lg:m-0">
+          <div className="my-0 flex min-h-[40vh] flex-1 flex-col justify-center md:max-w-lg lg:my-20">
+            <h3 className="poppins-medium m-2 mb-4 text-2xl font-semibold md:m-0 md:text-4xl lg:m-0">
               Milestones Reached in Our Educare.
             </h3>
-            <p className="my-4 mb-4 w-56 text-sm text-gray-600 ">
+            <p className="poppins-medium my-8 mb-4 w-[22rem] text-lg text-gray-600 ">
               Transforming Education in Nagpur Since 2012: Pioneering Growth,
               Excellence, and Innovation.
             </p>
@@ -113,14 +113,14 @@ const Achievements = () => {
                               ))}
                             </div>
                           </div>
-                          <p className="mb-4  w-40 font-semibold text-gray-400">
+                          <p className="mb-4 text-lg w-40 poppins-bold text-gray-500">
                             {testimonial.title}
                           </p>
-                          <p className="mb-4  font-semibold text-gray-400">
+                          <p className="mb-4 text-lg  poppins-bold text-gray-500">
                             {testimonial.year}
                           </p>
                           <div>
-                            <h4 className="">{testimonial.name}</h4>
+                            <h4 className="poppins-bold">{testimonial.name}</h4>
                             <p className="text-xs text-gray-500">
                               {testimonial.post}
                             </p>

@@ -62,9 +62,11 @@ const EventPage = () => {
           Our Events
         </h2>
       </div>
-      <div className="relative flex w-full flex-col justify-center lg:flex-row">
-        <VectorImage imagePath={felicitationImagePath} />
-        <div className="relative z-50">
+      <div className="relative flex w-full flex-col justify-between gap-12 md:gap-32 lg:flex-row">
+        <div className="w-full lg:w-1/2">
+          <VectorImage imagePath={felicitationImagePath} />
+        </div>
+        <div className="relative z-50 w-full lg:w-1/2">
           <FelicitationContent
             title={felicitationContent.title}
             imagePath={felicitationContent.imagePath}
@@ -73,16 +75,18 @@ const EventPage = () => {
           <Image
             src={One}
             alt="Felicitation"
-            className="hidden lg:flex absolute left-[25rem] top-10 z-0 h-40 w-40"
+            className="absolute left-[25rem] top-10 z-0 hidden h-40 w-40 lg:flex"
             layout="intrinsic"
           />
         </div>
       </div>
 
       <FalicitationImage />
-      <div className="relative flex w-full flex-col justify-center lg:flex-row">
-        <VectorImage imagePath={childrenImagePath} />
-        <div className="relative z-50">
+      <div className="relative flex w-full flex-col justify-between gap-12 md:gap-32 lg:flex-row">
+        <div className="w-full lg:w-1/2">
+          <VectorImage imagePath={childrenImagePath} />
+        </div>
+        <div className="relative z-50 w-full lg:w-1/2">
           <FelicitationContent
             title={childrenContent.title}
             imagePath={childrenContent.imagePath}
@@ -91,15 +95,17 @@ const EventPage = () => {
           <Image
             src={Two}
             alt="Felicitation"
-            className="hidden lg:flex absolute left-[25rem] top-[12rem] z-0 h-40 w-40"
+            className="absolute left-[25rem] top-[12rem] z-0 hidden h-40 w-40 lg:flex"
             layout="intrinsic"
           />
         </div>
       </div>
       <ChildrenImage />
-      <div className="relative flex w-full flex-col justify-center lg:flex-row">
-        <VectorImage imagePath={garbaImagePath} />
-        <div className="relative z-50">
+      <div className="relative flex w-full flex-col justify-between gap-12 md:gap-32 lg:flex-row">
+        <div className="w-full lg:w-1/2">
+          <VectorImage imagePath={garbaImagePath} />
+        </div>
+        <div className="relative z-50 w-full lg:w-1/2">
           <FelicitationContent
             title={garbaContent.title}
             imagePath={garbaContent.imagePath}
@@ -108,15 +114,17 @@ const EventPage = () => {
           <Image
             src={Three}
             alt="Felicitation"
-            className="hidden lg:flex absolute left-[25rem] top-[12rem] z-0 h-40 w-40"
+            className="absolute left-[25rem] top-[12rem] z-0 hidden h-40 w-40 lg:flex"
             layout="intrinsic"
           />
         </div>
       </div>
       <GarbaImage />
-      <div className="relative flex w-full flex-col justify-center lg:flex-row">
+      <div className="relative flex w-full flex-col gap-12 md:gap-32 justify-between lg:flex-row">
+      <div className="w-full lg:w-1/2">
         <VectorImage imagePath={farewellImagePath} />
-        <div className="relative z-50">
+        </div>
+        <div className="relative z-50 w-full lg:w-1/2">
           <FelicitationContent
             title={Farewell.title}
             imagePath={Farewell.imagePath}
@@ -125,27 +133,29 @@ const EventPage = () => {
           <Image
             src={Four}
             alt="Felicitation"
-            className="hidden lg:flex absolute left-[25rem] top-[12rem] z-0 h-40 w-40"
+            className="absolute left-[25rem] top-[12rem] z-0 hidden h-40 w-40 lg:flex"
             layout="intrinsic"
           />
         </div>
       </div>
       <FarewellImage />
-      <div className="relative flex w-full flex-col justify-center lg:flex-row">
+      <div className="relative flex w-full gap-12 md:gap-32 flex-col justify-between lg:flex-row">
+      <div className="w-full lg:w-1/2">
         <VectorImage imagePath={picnicImagePath} />
-        <div className="relative z-50">
-        <FelicitationContent
-          title={Picnic.title}
-          imagePath={Picnic.imagePath}
-          description={Picnic.description}
-        />
-        <Image
+        </div>
+        <div className="relative z-50 w-full lg:w-1/2">
+          <FelicitationContent
+            title={Picnic.title}
+            imagePath={Picnic.imagePath}
+            description={Picnic.description}
+          />
+          <Image
             src={Five}
             alt="Felicitation"
-            className="hidden lg:flex absolute left-[25rem] top-[12rem] z-0 h-40 w-40"
+            className="absolute left-[25rem] top-[12rem] z-0 hidden h-40 w-40 lg:flex"
             layout="intrinsic"
           />
-      </div>
+        </div>
       </div>
       <PicnicImage />
     </div>

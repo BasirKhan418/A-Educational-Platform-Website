@@ -8,38 +8,38 @@ const Events = () => {
     {
       event: "Felicitation",
       description:
-        "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
+        "Felicitation Ceremony: Honoring Excellence.",
       image: "hero/events/falicitation.png",
     },
     {
       event: "Children's Day",
       description:
-        "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
+        "Children's Day Celebration: Nurturing Joy and Creativity.",
       image: "hero/events/children.png",
     },
     {
       event: "Garba Night",
       description:
-        "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
+        "Garba Night: A Colorful Celebration of Culture and Community.",
       image: "hero/events/garba.png",
     },
     {
       event: "Picnic",
       description:
-        "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
+        "Annual School Picnic: Adventure, Bonding, and Fun Beyond the Classroom.",
       image: "hero/events/picnic.png",
     },
     {
       event: "Diwali",
       description:
-        "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
+        "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
       image:
         "hero/events/diwali.png",
     },
     {
       event: "Farewell",
       description:
-        "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
+        "Farewell: Celebrating Achievements, Embracing New Beginnings.",
       image: "hero/events/farewell.png",
     },
   ];
@@ -55,7 +55,7 @@ const Events = () => {
       </div>
       <div className="flex w-full flex-col items-center justify-center">
         <div className="flex flex-col items-center justify-center">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3   ">
+          <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3   ">
             {event.map((item, index) => (
               <div
                 key={index}
@@ -72,13 +72,13 @@ const Events = () => {
                     borderLeft: "1px solid #02B3E4",
                     borderRight: "1px solid #02B3E4",
                   }}
-                  className=" mb-4 h-[227px] w-[360px] rounded-lg object-cover"
+                  className=" mb-4 h-[227px] w-[360px]  object-cover"
                 />
-                <h3 className="px-4 text-left  text-xl font-bold">
+                <h3 className="px-4 text-left  text-2xl font-bold">
                   {item.event}
                 </h3>
                 <p className="my-2 px-4 text-left text-sm text-gray-400">
-                  16 January 2017
+                At Gour's Educare Plus,
                 </p>
                 <p className="poppins-medium w-[321px]  px-3 text-left text-gray-400">
                   {item.description}

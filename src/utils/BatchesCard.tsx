@@ -25,7 +25,7 @@ const VisionCard: React.FC<VisionCardProps> = ({
   testSeries,
 }) => {
   return (
-    <Card className="mx-auto my-4 flex w-full transform flex-col justify-center rounded-lg bg-white p-4 shadow-md transition-transform duration-300 hover:scale-105 md:w-3/4 lg:w-1/2 xl:w-1/3">
+    <Card className="mx-auto my-4 flex w-full transform flex-col justify-center rounded-lg bg-white p-4 shadow-md transition-transform duration-300 hover:scale-105 md:w-3/4 lg:w-[22rem]">
       <CardHeader>
         <CardTitle className="text-lg font-bold">{title}</CardTitle>
       </CardHeader>
