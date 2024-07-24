@@ -43,12 +43,12 @@ const Result = () => {
       className="section-width poppins-bold flex flex-col justify-center items-center container my-20 w-full space-y-8"
     >
       <Title title="Our Results" className="self-start"/>
-      <div className="flex flex-col items-center justify-center">
-        <div className="mb-8 mt-8 grid grid-cols-1 items-center justify-center gap-6 md:grid-cols-2 lg:grid-cols-2">
+      <div className="flex flex-col w-full items-center justify-center">
+        <div className="mb-8 mt-8  grid grid-cols-1 items-center justify-center gap-6 md:grid-cols-2 lg:grid-cols-2">
           {ResultData.map((item, index) => (
             <div
               key={index}
-              className="mx-2 my-2 flex flex-col items-center justify-center text-center"
+              className="mx-2 my-2 flex flex-col items-center justify-center text-center p-6 shadow-xl"
               style={{ borderRadius: "20px" }}
             >
               <img
@@ -59,16 +59,16 @@ const Result = () => {
             </div>
           ))}
         </div>
-        <div className="lg:justify-space xl:justify-space mt-8 flex max-w-full items-center justify-center md:justify-between">
+        <div className="lg:justify-space xl:justify-space mt-8 flex max-w-full items-center justify-center md:justify-between ">
           <a
             href="#"
-            className="inter-bold mx-2 hidden text-2xl text-bgcust md:block md:text-xl lg:block"
+            className="inter-bold mx-2 hidden text-2xl text-bgcust md:block md:text-xl lg:block whitespace-nowrap"
           >
             View All Results
           </a>
           <div className="mx-3 hidden h-[0.75px] w-[52vw] bg-black md:block md:text-xl lg:block"></div>
           <Button variant={"outline"} className="rounded-full text-lg">
-            <span>All Results </span>
+            <span className="">All Results </span>
             <ArrowRight strokeWidth={1} size={14} />
           </Button>
         </div>

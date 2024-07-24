@@ -1,8 +1,15 @@
 import React from "react";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
+  CardDiscount,
+} from "@/components/ui/card";
 
 interface VisionCardProps {
   title: string;
+  discount: string;
   timings: {
     morning: string;
     noon: string;
@@ -17,6 +24,7 @@ interface VisionCardProps {
 
 const VisionCard: React.FC<VisionCardProps> = ({
   title,
+  discount,
   timings,
   subjects,
   syllabusCompletion,
@@ -26,9 +34,13 @@ const VisionCard: React.FC<VisionCardProps> = ({
 }) => {
   return (
     <Card className="mx-auto my-4 flex w-full transform flex-col justify-center rounded-lg bg-white p-4 shadow-md transition-transform duration-300 hover:scale-105 md:w-3/4 lg:w-[22rem]">
-      <CardHeader>
+      <CardHeader className="flex items-center">
         <CardTitle className="text-lg font-bold">{title}</CardTitle>
+        <CardDiscount textColor="text-green-700" bgColor="bg-green-100">
+          {discount}
+        </CardDiscount>
       </CardHeader>
+
       <CardContent className="space-y-4">
         <hr />
         <div className="flex justify-between">

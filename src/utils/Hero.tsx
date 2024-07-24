@@ -10,11 +10,11 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <div id="home" className="flex items-center justify-center">
+    <div id="home" className="min-h-screen flex items-center justify-center">
       <div className="bg-white dark:bg-gray-900">
         <section className="bg-[#FCF8F1] bg-opacity-30 py-10 dark:bg-black sm:py-16 lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+            <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 ">
               <motion.div
                 className="flex flex-col items-center justify-center lg:block"
                 initial={{ opacity: 0, x: -50 }}
@@ -24,10 +24,10 @@ const Hero = () => {
                 <h1 className="inter-bold mt-12 text-center text-5xl font-bold text-black dark:text-white sm:text-6xl md:mt-8 lg:mt-12 lg:text-left xl:text-[84px]">
                   Best Offline Platform For Education
                 </h1>
-                <p className="inter-medium mt-2 text-center text-sm text-secondary dark:text-gray-300 sm:text-sm md:text-left lg:mt-4 lg:h-[32px] lg:w-[425px] lg:text-left">
+                <p className="inter-medium mt-2 text-center text-sm text-secondary dark:text-gray-300 sm:text-sm md:text-left lg:mt-8 lg:h-[32px] lg:w-[425px] lg:text-left">
                   Nurturing Individual Potential: Nagpurs Leading Coaching Center Since 2012. Growing Annually.
                 </p>
-                <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row md:items-start md:justify-start lg:items-start lg:justify-start">
+                <div className="mt-12 flex flex-col items-center justify-center gap-4 md:flex-row md:items-start md:justify-start lg:items-start lg:justify-start">
                   <Link href={"/enquiry"}>
                     <Button
                       size={"lg"}

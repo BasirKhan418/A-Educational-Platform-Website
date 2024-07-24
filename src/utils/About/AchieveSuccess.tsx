@@ -24,7 +24,7 @@ const AchieveSuccess = () => {
             <img
               src="/about/roundedvector.svg"
               alt="Students"
-              className="absolute inset-0 h-full w-full object-cover"
+              className="absolute inset-0 h-150 w-150"
             />
             <div className="absolute left-0 top-16">
               <img
@@ -67,7 +67,7 @@ const AchieveSuccess = () => {
             <img
               src="/about/roundedvector.svg"
               alt="Students"
-              className="absolute inset-0 h-full w-full object-cover"
+              className="absolute inset-0 h-150 w-150"
             />
             <div className="absolute left-0 top-16">
               <img
@@ -135,7 +135,7 @@ const AchieveSuccess = () => {
             <img
               src="/about/roundedvector.svg"
               alt="Students"
-              className="absolute inset-0 h-full w-full object-cover"
+              className="absolute inset-0 h-150 w-150"
             />
             <div className="absolute left-0 top-16">
               <img
@@ -157,7 +157,7 @@ const AchieveSuccess = () => {
               <img
                 src="/about/acheive/3.png"
                 alt="Students"
-                className="inset-0 h-40 w-20 -rotate-12 object-cover md:h-72 md:w-56"
+                className="inset-0 h-40 w-20 -rotate-12 md:h-[17.5rem] md:w-[13.5rem]"
                 style={{
                   borderTopLeftRadius: "83px",
                   borderTopRightRadius: "83px",

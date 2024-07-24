@@ -1,28 +1,53 @@
-import { Button } from '@/components/ui/button';
-import React from 'react';
+import { Button } from "@/components/ui/button";
+import React from "react";
+import BannerImage from "../../public/result/join.png";
 
 const JoinUsSection = () => {
   return (
-    <div className='flex items-center justify-center w-full my-20'>
-    <div className="flex justify-center items-center mt-20 rounded lg:w-full md:w-full w-[90vw]">
-      <div className="bg-cover bg-center rounded-lg shadow-lg overflow-hidden lg:max-w-7xl md:max-w-5xl max-w-4xl" style={{ backgroundImage: `url('https://s3-alpha-sig.figma.com/img/9250/c89e/f18f33d783fef5055204ced5370bafac?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=klNFNvi5HAVuSdEoWb3whhFS47CNDzbFhR5xqIcjuSzm~Lh3Sca7owtK3jHGxi4c4rrsJbTmfmcu0iYg-XtavA-mgh0DORqs8IAKRtG0YAL9sG-RgDh5oZcAin6z8lB5ZVWgSgWvkmQQZI3sf5gIny~NXzXwiSWUfP7ExG3~EoB-egAu3PYLVB5YRPvHeoKgMOCo8tx1Q--0avpohmDT~Txtg9LD4SdrNh4VTmskXcnWS9GT3zXtxAQ~LpSnerETXisax8eXufN4gCxhptaDpn1KOByu2IhOkM5DOCSLos5Nj58nZdHemzK14iiUqae9g80R-icg1BlDOhulJUbQsA__')` }}>
-        <div className="bg-black bg-opacity-80 p-8 sm:p-12 text-center rounded-lg lg:h-[400px] md:h-[400px] h-[460px] flex justify-center items-center flex-col w-full lg:w-[1160px] ">
-          <h3 className="text-xl sm:text-2xl font-semibold text-bgcust inter-bold">Join Us</h3>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mt-2 mb-4 inter-bold lg:w-[474px] md:w-full">Join Us by Creating an Account or Start a Free Trial</h2>
-          <p className="text-gray-300 mb-6 lg:w-[474px] inter-medium md:w-full">
-            Install our top-rated dropshipping app to your e-commerce site and get access to US Suppliers, AliExpress vendors, and the best dropshipping and custom products.
-          </p>
-          <div className="flex justify-center space-x-4 flex-wrap my-2">
-            <Button className='rounded-full font-medium my-2'>
-               Book a demo &rarr;
-            </Button>
-            <Button variant={"outline"} className='rounded-full my-2 font-medium' >
-              Contact Us &rarr;
-            </Button>
+    <div className="my-20 flex w-full items-center justify-center">
+      <div className="mt-20 flex w-[90vw] items-center justify-center rounded-lg md:w-full lg:w-full">
+        <div
+          className="max-w-4xl overflow-hidden rounded-lg bg-cover bg-center shadow-lg md:max-w-5xl lg:max-w-7xl"
+          style={{
+            backgroundImage: `url('${BannerImage.src}')`,
+            height: "100%",
+          }}
+        >
+          <div className=" flex h-[460px] w-full flex-col items-center justify-center gap-4 rounded-lg bg-opacity-80 p-8 text-center sm:p-12 md:h-[400px] lg:h-[400px] lg:w-[1160px]">
+            <h3 className="text-bgcust inter-bold text-xl font-semibold sm:text-2xl">
+              Join Us
+            </h3>
+            <h2 className="inter-bold mb-4 mt-2 text-2xl font-bold text-white sm:text-3xl md:w-full lg:w-[474px]">
+              Join Us by Creating an Account or Start a Free Trial
+            </h2>
+            <p className="inter-medium mb-6 text-gray-300 md:w-full lg:w-[474px]">
+              Transform your education with us. Personalized coaching for
+              standards VII-X. Growing since 2012. Contact us to enroll today!
+            </p>
+            <div className="my-2 flex flex-wrap justify-center space-x-4">
+              {/* <Button className="my-2 rounded-full font-medium">
+                Book a demo &rarr;
+              </Button> */}
+              <button className="rounded-full bg-primary px-4 py-3 text-white">
+                <a
+                  href="https://www.google.com"
+                  className="my-2 rounded-full font-medium"
+                >
+                  Book a demo &rarr;
+                </a>
+              </button>
+              <button className="rounded-full border px-4 py-3 text-white">
+                <a
+                  href="https://www.google.com"
+                  className="my-2 rounded-full font-medium"
+                >
+                  Download Brochure &rarr;
+                </a>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };

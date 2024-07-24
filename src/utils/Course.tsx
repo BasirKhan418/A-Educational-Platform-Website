@@ -87,20 +87,20 @@ const Course: React.FC = () => {
         ))}
       </div>
       <div className="flex items-center justify-center">
-        <div className="relative flex items-center justify-center md:justify-between lg:justify-between xl:justify-between">
+        <div className="relative flex items-center justify-center md:justify-between lg:justify-between xl:justify-between ml-0 md:ml-4 lg:ml-12">
           <a
             href="#"
-            className="inter-bold mx-2 hidden text-2xl text-bgcust md:block md:text-xl lg:block"
+            className="inter-bold mx-2 hidden text-2xl text-bgcust md:block md:text-xl lg:block whitespace-nowrap"
           >
             View All Courses
           </a>
           <div className="hidden md:block lg:block">
-            <span className="poppins-bold absolute bottom-10 left-48 flex w-[54vw] items-center justify-center text-gray-500 ">
+            <span className="poppins-bold absolute bottom-10 left-48 flex w-[48vw] items-center justify-center text-gray-500 ">
               We help you find the perfect tutor. It is completely free. Explore
               all courses <span className="mx-2 text-bgcust">&rarr;</span>
             </span>
           </div>
-          <div className="mx-3 hidden h-[2px] w-[54vw] bg-gray-600 md:block md:text-xl lg:block"></div>
+          <div className="mx-3 hidden h-[2px] w-[44vw] bg-gray-600 md:block md:text-xl lg:block"></div>
           <button className="inter-medium mx-2 w-full rounded-full border-2 border-bgcust p-4 text-sm text-bgcust md:mr-10 md:w-36 lg:mr-10 lg:w-36">
             All Courses <span>&rarr;</span>
           </button>

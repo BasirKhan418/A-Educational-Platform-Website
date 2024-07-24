@@ -75,7 +75,7 @@ const Achievements = () => {
       >
         <Title title="Achievements" className=" inline text-2xl" />
 
-        <div className="flex flex-col items-start space-y-8 md:flex-row md:justify-between md:space-x-8 md:space-y-0">
+        <div className="flex flex-col items-center justify-center space-y-8 md:flex-row md:justify-between md:space-x-8 md:space-y-0">
           <div className="my-0 flex min-h-[40vh] flex-1 flex-col justify-center md:max-w-lg lg:my-20">
             <h3 className="poppins-medium m-2 mb-4 text-2xl font-semibold md:m-0 md:text-4xl lg:m-0">
               Milestones Reached in Our Educare.
@@ -86,12 +86,12 @@ const Achievements = () => {
             </p>
           </div>
 
-          <div className="poppins-medium w-full lg:w-[663px] ">
+          <div className="poppins-medium w-full lg:w-[763px]">
             <Carousel className=" my-0 max-md:max-w-md lg:my-20">
               <CarouselContent>
                 {testimonials.map((testimonial, index) => (
                   <CarouselItem key={index}>
-                    <Card className="mx-auto max-w-[225px] border-2 border-blue-200 md:max-w-xl">
+                    <Card className="mx-auto max-w-[290px] border-2 border-blue-200 md:max-w-2xl">
                       <CardContent className="flex min-h-[40vh] flex-col items-center p-0 md:flex-row md:items-stretch md:gap-4">
                         <div className="md:w-1/2">
                           <Image

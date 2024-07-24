@@ -53,13 +53,13 @@ const Events = () => {
           Unforgettable Events That Enrich the Learning Journey.
         </p>
       </div>
-      <div className="flex w-full flex-col items-center justify-center">
-        <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center ml-0 md:ml-4">
+        <div className="flex flex-col w-full items-center justify-center">
           <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3   ">
             {event.map((item, index) => (
               <div
                 key={index}
-                className="roboto-medium mx-2  my-4 h-[400px] w-[320px] rounded-lg bg-white text-center md:h-[426px]  md:w-[360px] lg:h-[426px] lg:w-[360px]"
+                className="roboto-medium mx-2  my-4 h-[400px] w-[320px] rounded-xl bg-white text-center md:h-[426px]  md:w-[360px] lg:h-[426px] lg:w-[360px]"
                 style={{
                   borderLeft: "1px solid #02B3E4",
                   borderRight: "1px solid #02B3E4",
@@ -72,7 +72,7 @@ const Events = () => {
                     borderLeft: "1px solid #02B3E4",
                     borderRight: "1px solid #02B3E4",
                   }}
-                  className=" mb-4 h-[227px] w-[360px]  object-cover"
+                  className=" mb-4 h-[227px] w-[360px] rounded-t-xl object-cover"
                 />
                 <h3 className="px-4 text-left  text-2xl font-bold">
                   {item.event}
@@ -86,14 +86,14 @@ const Events = () => {
               </div>
             ))}
           </div>
-          <div className="mt-16 flex items-center justify-center md:justify-between lg:justify-between xl:justify-between">
+          <div className="mt-16 flex items-center justify-center md:justify-between lg:justify-between xl:justify-between ml-0 md:ml-4 lg:ml-18">
             <a
               href="#"
-              className="inter-bold mx-2 hidden text-2xl text-bgcust md:block md:text-xl lg:block"
+              className="inter-bold mx-2 hidden text-2xl text-bgcust md:block md:text-xl lg:block whitespace-nowrap"
             >
               View All Events
             </a>
-            <div className="mx-3 hidden h-[2px] w-[54vw] bg-gray-600 md:block md:text-xl lg:block"></div>
+            <div className="mx-3 hidden h-[2px] w-[44vw] bg-gray-600 md:block md:text-xl lg:block"></div>
             <button className="inter-medium mx-2 w-full rounded-full border-2 border-bgcust p-4 text-sm text-bgcust md:mr-10 md:w-36 lg:mr-10 lg:w-36">
               All Events <span>&rarr;</span>
             </button>

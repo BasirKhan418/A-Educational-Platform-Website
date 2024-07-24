@@ -27,9 +27,9 @@ const FeatureCards: React.FC = () => {
         </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
         {cards.map((card, index) => (
-          <div key={index} className="flex flex-col items-center text-center p-4 bg-white rounded-lg">
-            <img src={card.image} alt={card.title} className="w-30 h-30 mb-4" />
-            <h3 className="text-xl font-bold mb-2 poppins-bold">{card.title}</h3>
+          <div key={index} className="flex flex-col items-center justify-center text-center p-4 bg-white rounded-lg">
+            <img src={card.image} alt={card.title} className="w-40 h-40 mb-4" />
+            <h3 className="text-2xl font-bold mb-2 poppins-bold">{card.title}</h3>
             <p className="text-gray-600 w-[334px] poppins-medium">{card.description}</p>
           </div>
         ))}

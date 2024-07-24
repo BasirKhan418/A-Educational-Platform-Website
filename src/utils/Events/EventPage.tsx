@@ -58,7 +58,7 @@ const EventPage = () => {
   return (
     <div className="section-width flex min-h-screen flex-col items-center justify-center gap-12">
       <div className="my-24 flex flex-col items-center justify-center bg-white p-4 md:flex-row">
-        <h2 className="inter-bold text-center text-5xl font-bold text-bgcust">
+        <h2 className="inter-bold text-bgcust text-center text-5xl font-bold">
           Our Events
         </h2>
       </div>
@@ -120,9 +120,9 @@ const EventPage = () => {
         </div>
       </div>
       <GarbaImage />
-      <div className="relative flex w-full flex-col gap-12 md:gap-32 justify-between lg:flex-row">
-      <div className="w-full lg:w-1/2">
-        <VectorImage imagePath={farewellImagePath} />
+      <div className="relative flex w-full flex-col justify-between gap-12 md:gap-32 lg:flex-row">
+        <div className="w-full lg:w-1/2">
+          <VectorImage imagePath={farewellImagePath} />
         </div>
         <div className="relative z-50 w-full lg:w-1/2">
           <FelicitationContent
@@ -139,9 +139,9 @@ const EventPage = () => {
         </div>
       </div>
       <FarewellImage />
-      <div className="relative flex w-full gap-12 md:gap-32 flex-col justify-between lg:flex-row">
-      <div className="w-full lg:w-1/2">
-        <VectorImage imagePath={picnicImagePath} />
+      <div className="relative flex w-full flex-col justify-between gap-12 md:gap-32 lg:flex-row">
+        <div className="w-full lg:w-1/2">
+          <VectorImage imagePath={picnicImagePath} />
         </div>
         <div className="relative z-50 w-full lg:w-1/2">
           <FelicitationContent
