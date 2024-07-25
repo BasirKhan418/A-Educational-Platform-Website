@@ -2,19 +2,19 @@ import Title from "@/components/title";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React from "react";
+import Plant from "../../public/event/plant.png";
+import Image from "next/image";
 
 const Events = () => {
   const event = [
     {
       event: "Felicitation",
-      description:
-        "Felicitation Ceremony: Honoring Excellence.",
+      description: "Felicitation Ceremony: Honoring Excellence.",
       image: "hero/events/falicitation.png",
     },
     {
       event: "Children's Day",
-      description:
-        "Children's Day Celebration: Nurturing Joy and Creativity.",
+      description: "Children's Day Celebration: Nurturing Joy and Creativity.",
       image: "hero/events/children.png",
     },
     {
@@ -33,8 +33,7 @@ const Events = () => {
       event: "Diwali",
       description:
         "Lorem ipsum is placeholder text commonly used in the graphic, print mockups.",
-      image:
-        "hero/events/diwali.png",
+      image: "hero/events/diwali.png",
     },
     {
       event: "Farewell",
@@ -45,16 +44,23 @@ const Events = () => {
   ];
 
   return (
-    <section id="event" className="section-width poppins-bold space-y-4 mb-16">
+    <section id="event" className="section-width poppins-bold mb-16 space-y-4">
       <Title title="Our Event" className="" />
-      <div>
+      <div className="flex items-center gap-12">
         <p className="text-md poppins-medium my-10 max-w-4xl text-gray-600">
           Beyond Textbooks: Celebrating Growth, Culture, and Community Through
           Unforgettable Events That Enrich the Learning Journey.
         </p>
+        <Image
+          src={Plant}
+          alt="Plant"
+          className="hidden lg:flex "
+          width={90}
+          height={50}
+        />
       </div>
-      <div className="flex flex-col items-center justify-center ml-0 md:ml-4">
-        <div className="flex flex-col w-full items-center justify-center">
+      <div className="ml-0 flex flex-col items-center justify-center md:ml-4">
+        <div className="flex w-full flex-col items-center justify-center">
           <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3   ">
             {event.map((item, index) => (
               <div
@@ -78,7 +84,7 @@ const Events = () => {
                   {item.event}
                 </h3>
                 <p className="my-2 px-4 text-left text-sm text-gray-400">
-                At Gour's Educare Plus,
+                  At Gour's Educare Plus,
                 </p>
                 <p className="poppins-medium w-[321px]  px-3 text-left text-gray-400">
                   {item.description}
@@ -86,10 +92,10 @@ const Events = () => {
               </div>
             ))}
           </div>
-          <div className="mt-16 flex items-center justify-center md:justify-between lg:justify-between xl:justify-between ml-0 md:ml-4 lg:ml-18">
+          <div className="lg:ml-18 ml-0 mt-16 flex items-center justify-center md:ml-4 md:justify-between lg:justify-between xl:justify-between">
             <a
               href="#"
-              className="inter-bold mx-2 hidden text-2xl text-bgcust md:block md:text-xl lg:block whitespace-nowrap"
+              className="inter-bold mx-2 hidden whitespace-nowrap text-2xl text-bgcust md:block md:text-xl lg:block"
             >
               View All Events
             </a>

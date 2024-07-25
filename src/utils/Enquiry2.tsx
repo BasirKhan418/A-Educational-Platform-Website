@@ -109,10 +109,10 @@ const Enquiry2 = () => {
         </div>
       </div>
       <div className="z-50 flex min-h-screen items-center justify-center ">
-        <div className="w-full max-w-6xl rounded-lg bg-gradient-to-b from-[#02B3E4] to-[#0790B6] p-6 shadow-xl md:absolute md:top-52 lg:absolute lg:top-52">
-          <div className="grid grid-cols-1 gap-6 px-5 md:grid-cols-2">
+        <div className="w-full max-w-6xl rounded-lg bg-gradient-to-b from-[#02B3E4] to-[#0790B6] shadow-xl md:absolute md:top-52 lg:absolute lg:top-52">
+          <div className="grid grid-cols-1  md:grid-cols-2">
             {/* LEFT CONTACT SIDE */}
-            <div className="flex flex-col justify-between rounded-lg p-6 text-white">
+            <div className="flex flex-col justify-between rounded-lg p-6 text-white pl-16">
               <div className="relative flex flex-col items-center gap-16">
                 <div>
                   <button
@@ -129,7 +129,7 @@ const Enquiry2 = () => {
                   <div className="h-1 w-28 rounded bg-white"></div>
                 </div>
               </div>
-              <div>
+              <div className="flex flex-col gap-4">
                 <p className="my-2 mb-2 text-lg text-gray-200">
                   Corporate Office:
                 </p>
@@ -154,7 +154,7 @@ const Enquiry2 = () => {
             </div>
 
             {/* RIGHT CONTACT SIDE */}
-            <div className="poppins-medium rounded-lg bg-white p-6">
+            <div className="poppins-medium rounded-r-lg bg-white p-6">
               {!formSubmitted ? (
                 <form onSubmit={handleSubmit}>
                   <div className="mb-4">
