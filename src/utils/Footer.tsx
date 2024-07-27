@@ -14,7 +14,7 @@ export default function Footer() {
           <img src="https://s3-alpha-sig.figma.com/img/a882/5901/1ad79801565535bce92321fc3543c61a?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NaqwwZfCq8dEGw0gOs8YarIzOxkoGS3qVYe-8qk~NamuzEqSq0FAQbUQ2ZTD9lPTLhIvfYUQcaG3JxWUc9WhPqtVvW7AP-fYoOHQki5qi6vpP7vrvm8V4TiUV18zLPPyScsicWVihuxmO8jvpLxniwguPYTWnyo8Ai827my25eG2ytRvluD4CrkzCaeibrvfwV3qNZl8~s0Ea6lqk8NIK3RdfjCx2GaEkJ7k2jpnRfMgBb3EpdYo-sVrHiAaHWT1BGynXAfoRz1hah2B0ziNQVERe8cAknC9Y4RVgMB4qhxOTR1I18q-b6Rzm2th2fVW8YlbccB2E4hJSx9F-W2dXg__" alt="" />
         </div>
         <div className="container mx-auto py-8 px-4 flex flex-col md:flex-row justify-between items-start md:items-center  ">
-          <div className="flex flex-col items-center justify-center mb-6 md:mb-0 mt-4 w-96 p-4 lg:p-28 ">
+          <div className="flex flex-col items-center justify-center mb-6 md:mb-0 mt-4 w-100 p-4 lg:p-28 ">
             <h2 className="text-2xl font-bold text-bgcust poppins-bold mt-4">eLearning</h2>
             <div className="flex space-x-4 mt-8">
               <Link href="#" aria-label="Instagram">

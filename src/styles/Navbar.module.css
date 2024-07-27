@@ -1,0 +1,49 @@
+.navbar {
+  /* General navbar styles */
+}
+
+.scrolling {
+  /* Style for when scrolling */
+}
+
+.open {
+  /* Style for when menu is open */
+}
+
+.bgTransparent {
+  background-color: transparent;
+}
+
+.openMenu {
+  /* Styles for open menu */
+}
+
+.closedMenu {
+  /* Styles for closed menu */
+}
+
+.navItem {
+  /* Common styles for nav items */
+}
+
+.textWhite {
+  color: white;
+}
+.activeItem::after {
+  content: "";
+  display: block;
+  height: 2px; /* Adjust thickness of the underline */
+  background: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Change to your color and adjust opacity */
+  backdrop-filter: blur(8px); /* Adjust the blur intensity */
+  transition: width 0.3s ease;
+  width: 100%;
+}
+
+.inactiveItem {
+  /* Style for inactive items */
+}

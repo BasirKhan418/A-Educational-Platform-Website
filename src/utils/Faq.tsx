@@ -47,9 +47,9 @@ const FAQ: React.FC = () => {
       <h2 className="font-bold mb-4 poppins-bold lg:text-6xl md:text-6xl text-4xl text-black">
         Frequently Asked Questions
       </h2>
-      <div className="h-1 bg-bgcust rounded w-40 mb-4"></div>
+      <div className="h-1 bg-bgcust rounded w-40 mb-12"></div>
       {faqs.map((faq, index) => (
-        <div key={index} className="mb-4 shadow">
+        <div key={index} className="mb-8 shadow">
           <button
             onClick={() => toggle(index)}
             className="w-full text-left flex justify-start items-center py-4 px-2 bg-white rounded-lg focus:outline-none"

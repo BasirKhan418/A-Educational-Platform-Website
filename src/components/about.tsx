@@ -23,7 +23,7 @@ const About = () => {
             </div>
             <div className="space-y-4">
               <Image
-                className="absolute max-md:top-10 right-5 max-md:opacity-50  md:bottom-0 md:left-10"
+                className="absolute max-md:top-10 right-5 max-md:opacity-50  md:top-[30rem] md:left-10"
                 src="/about/plant.svg"
                 alt="growth"
                 width={150}
@@ -74,7 +74,7 @@ const AboutItem = ({
 }) => {
   return (
     <div
-      className={`relative max-w-xs space-y-2 text-xl *:font-bold ${id % 2 == 0 ? "self-end max-md:text-right" : ""}  ${className}`}
+      className={`relative max-w-xs space-y-2  ${id % 2 == 0 ? "self-end max-md:text-right" : ""}  ${className}`}
     >
       <Image
         src={icon}
@@ -83,8 +83,8 @@ const AboutItem = ({
         height={40}
         className={`absolute ${id % 2 != 0 ? "left-0 -translate-x-1/2" : "right-0 translate-x-[20%]"} md:-translate-x-1/2 top-0 md:left-0 h-40 w-40  -translate-y-1/2`}
       />
-      <h3 className="">{title}</h3>
-      <p className="text-gray-500">{description}</p>
+      <h1 className="font-extrabold text-xl">{title}</h1>
+      <p className="poppins-regular text-gray-400">{description}</p>
     </div>
   );
 }

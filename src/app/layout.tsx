@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import Navbar from "@/utils/Navbar";
 import Footer from "@/utils/Footer";
 import NextTopLoader from 'nextjs-toploader';
+import { Toaster } from "@/components/ui/toaster";
 export const metadata = {
   title: "EduCare Plus",
   description: "Best Offline Education Platform",
@@ -33,6 +34,7 @@ export default function RootLayout({
           <Navbar />
           {children}
            <Footer/>
+            <Toaster />
         </ThemeProvider>
       </body>
     </html>

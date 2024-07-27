@@ -1,9 +1,8 @@
-import { title } from 'process';
+// import { title } from 'process';
 import React from 'react'
 
 const Title = ({
     title,
-    children,
     className,
 }: {
   children?: React.ReactNode;

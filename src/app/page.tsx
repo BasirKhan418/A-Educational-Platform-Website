@@ -8,6 +8,7 @@ import Hero from "@/utils/Hero";
 import About from "@/components/about";
 import Result from "@/utils/Result";
 import Events from "@/utils/Events";
+import Batches from "@/utils/Batches"
 import Achievements from "@/components/achievements";
 import Course from "@/utils/Course";
 import Blog from "@/utils/Blog";
@@ -16,13 +17,14 @@ import Banner from "@/utils/Banner";
 import JoinUsSection from "@/utils/Joinus";
 export default function LandingPage() {
   return (
-    <div className="overflow-y-hidden">
+    <div className="overflow-y-hidden overflow-x-hidden ">
       <Hero />
       <About />
       <Achievements />
       <Result/>  
       <JoinUsSection />
       <Events />
+      <Batches/>
       <Course/>
       <Blog/>
       <FAQ/>
